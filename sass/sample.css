@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/** sample.css **/
+/** mixin テンプレート的な機能 **/
+/** ネストしたクラスを書くことができる **/
+div.samp1 {
+  margin: 10px;
+}
+
+div.samp1 .nest1, div.samp1 .nest2 {
+  padding: 5px;
+}
+
+/** for文 **/
+.fs_10 {
+  font-size: 1.2rem;
+}
+
+.fs_11 {
+  font-size: 1.32rem;
+}
+
+.fs_12 {
+  font-size: 1.44rem;
+}
+
+.fs_13 {
+  font-size: 1.56rem;
+}
+
+.fs_14 {
+  font-size: 1.68rem;
+}
+
+.fs_15 {
+  font-size: 1.8rem;
+}
+
+/** &の使い方について、擬似要素の使用 **/
+ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+ul li span.samp2 {
+  font-weight: bold;
+}
+
+ul li.special:hover {
+  opacity: 0.8;
+}
+
+ul li:last-child {
+  margin-bottom: 0px;
+}
+
+ul li:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: -15px;
+  margin-top: -5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-left: 1px solid #000;
+  border-top: 1px solid  #000;
+}
+
+ul li:hover:before {
+  transform: rotate(225deg);
+}
+
+.btn-basic, .btn-child {
+  display: inline-block;
+  width: 200px;
+  padding: 20px 10px;
+  text-align: center;
+  border: 1px solid #b8b8b8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #c9c9c9x;
+}
+
+/** 継承 **/
+.btn-child {
+  background-color: #61DC60;
+}

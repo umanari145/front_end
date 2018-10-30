@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <meta charset="UTF-8">
+    <title>animation</title>
+	<link rel="stylesheet" type="text/css" href="animation.css">
+	<script
+	  src="https://code.jquery.com/jquery-1.12.4.js"
+	  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="animation.js"></script>
+    <body>
+
+    <p>hover時に回転</p>
+    <ul>
+      <li class="rotation">
+        お問い合わせはこちら
+      </li>
+    </ul>
+
+    <p>keyframesプロパティ</p>
+		<p>@keyframes使用</p>
+		<p>duration 1 delay5
+		始まるまで少し時間がかかり(5s)
+		動作自体はすぐ(1sで)終わる
+		</p>
+		<div class="block delay5_duration1">
+		</div>
+
+		<p>duration 5 delay1
+		始まるまではすぐ(1s)
+		動作自体はゆっくり(5s)終わる</p>
+		<div class="block delay1_duration5">
+		</div>
+
+		<p>animate使用</p>
+		<p>delay1s 動作自体は５s delayは毎回かかる
+		</p>
+		<div class="block" id="animating">
+		</div>
+
+		<p>transitionでhover時の動きを使用</p>
+		<p>delay1s 動作自体は５s delayは毎回かかる
+		</p>
+		<div class="block hovering">
+		</div>
+
+		<p>delay5s 動作自体は1s delayは毎回かかる　戻るにも同じ時間がかかることに注意。
+		</p>
+		<div class="block hovering2">
+		</div>
+
+		<p>スクロール検知して挙動の変化
+		</p>
+		<div class="detect_scroll_wrapper detect_button">
+			<span class="detect_scroll_button_inner"></span>
+		</div>
+
+		<p>擬似要素を使った枠線効果</p>
+		<div class="block_button">
+			<span class="inner_str">push</span>
+		</div>
+
+		<p>複雑なanimation</p>
+		<div class="circle_point">
+			push
+		</div>
+
+
+
+	</body>
+</html>

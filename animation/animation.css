@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body{
+	padding: 100px 0;
+}
+
+.rotation{
+  list-style-type: none;
+  position: relative;
+}
+
+.rotation::before{
+  background: absolute;
+  content: '';
+  top:50%;
+  right:5px;
+  margin-top: -7px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-left: 1px solid #000;
+  border-top: 1px solid  #000;
+  transition-delay: 0s;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+.rotation:hover::before{
+  transform: rotate(225deg);
+}
+
+
+.block{
+	height: 100px;
+	background: #000;
+}
+
+.delay5_duration1{
+	animation-name: sizeChange;
+    animation-duration: 1s;
+    animation-timing-function: liner;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+.delay1_duration5{
+	animation-name: sizeChange;
+    animation-duration: 5s;
+    animation-timing-function: liner;
+    animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes  sizeChange{
+	0% {
+		width: 10px;
+	}
+	100% {
+		width: 100px;
+	}
+}
+
+#animating{
+	width: 10px;
+}
+
+.hovering{
+	width: 10px;
+	margin-left: 40px;
+	transition-delay: 1s;
+	transition-duration: 5s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+.hovering:hover{
+	width: 100px;
+	margin-left: 0;
+}
+
+.hovering2{
+	width: 10px;
+	margin-left: 40px;
+	transition-delay: 5s;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+.hovering2:hover{
+	width: 100px;
+	margin-left: 0;
+}
+
+.detect_scroll_wrapper{
+	width: 200px;
+	height: 100px;
+	background: #fff;
+}
+
+.detect_scroll_button{
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+	background: #eee;
+}
+
+.detect_scroll_button_inner{
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+	background: #eee;
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+.block_button{
+	position: relative;
+	width:200px;
+	display: inline-block;
+	text-align: center;
+}
+.inner_str{
+	padding: 15px 0;
+	text-align:center;
+	display: block;
+	border: 1px solid #eee;
+}
+
+/**全要素共通**/
+.block_button::before,
+.block_button::after,
+.inner_str::before,
+.inner_str::after
+{
+	display: block;
+	position: absolute;
+	content:'';
+	transition: all 1s ease;
+	background-color: #3498db;
+}
+
+/*→方向*/
+.block_button::before{
+	height: 1px;
+	width: 0px;
+	top:0;
+	left:0;
+}
+/*←方向*/
+.block_button::after{
+	height: 1px;
+	width: 0px;
+	right: 0;
+	bottom: 0;
+}
+/*↓方向*/
+.inner_str::before{
+	height: 0px;
+	width: 1px;
+	right:0;
+	top:0;
+}
+/*↑方向*/
+.inner_str::after{
+	height: 0px;
+	width: 1px;
+	bottom:0;
+	left:0;
+}
+
+.block_button:hover::before,
+.block_button:hover::after
+{
+	width: 100%;
+}
+
+.block_button:hover .inner_str::before ,
+.block_button:hover .inner_str::after
+{
+	height: 100%;
+}
+
+.circle_point{
+	margin:20px 0 0 40px;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	transition:all .3s ;
+	border-radius: 50%;
+	background: #eee;
+}
+
+.circle_point:hover{
+	transform: scale(0.9);
+}

@@ -6,40 +6,37 @@
     <body>
 
       <p class="head">flex-direction 各要素の並び方</p>
-
+      <p>右に並ぶ(初期値) flex-direction:row;</p>
       <div class="flex-container row">
           <div class="flex-item">list1 row</div>
           <div class="flex-item">list2 row</div>
           <div class="flex-item">list3 row</div>
       </div>
 
+      <p>逆順 flex-direction:row-reverse;</p>
       <div class="flex-container row-reverse">
           <div class="flex-item">list1 row-reverse</div>
           <div class="flex-item">list2 row-reverse</div>
           <div class="flex-item">list3 row-reverse</div>
       </div>
 
+      <p>縦並び flex-direction:column;</p>
       <div class="flex-container column">
           <div class="flex-item">list1 column</div>
           <div class="flex-item">list2 column</div>
           <div class="flex-item">list3 column</div>
       </div>
 
+      <p>逆縦並び flex-direction: column-reverse;</p>
       <div class="flex-container column-reverse">
           <div class="flex-item">list1 column-reverse</div>
           <div class="flex-item">list2 column-reverse</div>
           <div class="flex-item">list3 column-reverse</div>
       </div>
 
-      <div class="flex-container nowrap">
-          <div class="flex-item">list1 nowrap</div>
-          <div class="flex-item">list2 nowrap</div>
-          <div class="flex-item">list3 nowrap</div>
-      </div>
-
       <p class="head">justify-content 横の並び方</p>
 
-      <p>左づめ(default) justify-content:flex-start;</p>
+      <p>左づめ(初期値) justify-content:flex-start;</p>
       <div class="flex-container flex-left">
           <div class="flex-item">list1 left</div>
           <div class="flex-item">list2 left</div>
@@ -62,16 +59,16 @@
 
       <p>均等ぞろえ(両端配置) justify-content:space-between;</p>
       <div class="flex-container flex-blance">
-          <div class="flex-item">list1 blance</div>
-          <div class="flex-item">list2 blance</div>
-          <div class="flex-item">list3 blance</div>
+          <div class="flex-item">list1 space-between</div>
+          <div class="flex-item">list2 space-between</div>
+          <div class="flex-item">list3 space-between</div>
       </div>
 
       <p>均等ぞろえ(両端スペースあり) justify-content:space-around;</p>
       <div class="flex-container flex-blance2">
-          <div class="flex-item">list1 blance2</div>
-          <div class="flex-item">list2 blance2</div>
-          <div class="flex-item">list3 blance2</div>
+          <div class="flex-item">list1 space-around</div>
+          <div class="flex-item">list2 space-around</div>
+          <div class="flex-item">list3 space-around</div>
       </div>
 
       <p class="head">align-items 縦の並び方</p>
@@ -100,23 +97,23 @@
       <p>baselineで揃える align-items:baseline</p>
       <p>baseline・・自動で計算される要素の基準線</p>
       <div class="flex-container2 top-max">
-          <div class="flex-item">list1 top-max</div>
-          <div class="flex-item">list2 top-max</div>
-          <div class="flex-item">list3 top-max</div>
+          <div class="flex-item">list1 baseline</div>
+          <div class="flex-item">list2 baseline</div>
+          <div class="flex-item">list3 baseline</div>
       </div>
 
       <p>引き伸ばし align-items:strech</p>
       <div class="flex-container2 bottom-max">
-          <div class="flex-item">list1 bottom-max</div>
-          <div class="flex-item">list2 bottom-max</div>
-          <div class="flex-item">list3 bottom-max</div>
+          <div class="flex-item">list1 strech</div>
+          <div class="flex-item">list2 strech</div>
+          <div class="flex-item">list3 strech</div>
       </div>
 
       <p>高さが決まっている場合は上に揃える align-items:strech</p>
       <div class="flex-container2 bottom-max">
-          <div class="flex-item" style="height:20px;">list1 bottom-max</div>
-          <div class="flex-item">list2 bottom-max</div>
-          <div class="flex-item" style="height:80px;">list3 bottom-max</div>
+          <div class="flex-item" style="height:20px;">list1 strech</div>
+          <div class="flex-item">list2 strech</div>
+          <div class="flex-item" style="height:80px;">list3 strech</div>
       </div>
 
 
@@ -124,37 +121,37 @@
 
       <p>上に揃える align-content:flex-start</p>
       <div class="flex-container3 flex-top-margin">
-          <div class="flex-item">list1 top margin</div>
-          <div class="flex-item">list2 top margin</div>
-          <div class="flex-item">list3 top margin</div>
+          <div class="flex-item">list1 top start</div>
+          <div class="flex-item">list2 top strat</div>
+          <div class="flex-item">list3 top start</div>
       </div>
 
       <p>下に揃える align-content:flex-end</p>
       <div class="flex-container3 flex-bottom-margin">
-          <div class="flex-item">list1 bottom margin</div>
-          <div class="flex-item">list2 bottom margin</div>
-          <div class="flex-item">list3 bottom margin</div>
+          <div class="flex-item">list1 bottom end</div>
+          <div class="flex-item">list2 bottom end</div>
+          <div class="flex-item">list3 bottom end</div>
       </div>
 
       <p>中央に揃える align-content:center</p>
       <div class="flex-container3 flex-middle-margin">
-          <div class="flex-item">list1 middle margin</div>
-          <div class="flex-item">list2 middle margin</div>
-          <div class="flex-item">list3 middle margin</div>
+          <div class="flex-item">list1 middle center</div>
+          <div class="flex-item">list2 middle center</div>
+          <div class="flex-item">list3 middle center</div>
       </div>
 
       <p>均等配置(端なし) align-content:space-between</p>
       <div class="flex-container3 flex-balance-margin">
-          <div class="flex-item">list1 balance margin</div>
-          <div class="flex-item">list2 balance margin</div>
-          <div class="flex-item">list3 balance margin</div>
+          <div class="flex-item">list1 balance space-between</div>
+          <div class="flex-item">list2 balance space-between</div>
+          <div class="flex-item">list3 balance space-between</div>
       </div>
 
       <p>均等配置(端あり) align-content:space-around</p>
       <div class="flex-container3 flex-balance2-margin">
-          <div class="flex-item">list1 balance2 margin</div>
-          <div class="flex-item">list2 balance2 margin</div>
-          <div class="flex-item">list3 balance2 margin</div>
+          <div class="flex-item">list1 balance2 space-around</div>
+          <div class="flex-item">list2 balance2 space-around</div>
+          <div class="flex-item">list3 balance2 space-around</div>
       </div>
 
       <p>幅がない場合伸ばす align-content:strech</p>
@@ -170,20 +167,6 @@
           <div class="flex-item">list2 balance2 strech</div>
           <div class="flex-item" style="height:50px;">list3 balance2 strech</div>
       </div>
-
-<!--
-      <div class="flex-container wrap">
-          <div class="flex-item">list1 wrap</div>
-          <div class="flex-item">list2 wrap</div>
-          <div class="flex-item">list3 wrap</div>
-      </div>
-
-      <div class="flex-container wrap-reverse">
-          <div class="flex-item">list1 wrap-reverse</div>
-          <div class="flex-item">list2 wrap-reverse</div>
-          <div class="flex-item">list3 wrap-reverse</div>
-      </div>
--->
 
     </body>
 </html>

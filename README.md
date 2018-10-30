@@ -1,7 +1,7 @@
 # front_end
 
 ## sass(scss)
-
+CSSプリプロセッサ
 
 ### 特徴、使用時のメリット
 - 変数、配列の使用、他ファイルの読み込み
@@ -45,3 +45,21 @@ ex. atomのsass-autocompile
 - sample.css 生成されたcss
 - _mixins.scss mixisについて
 - _variables.scss 変数、配列などについて
+
+
+## flexbox
+複雑なを平易にできる
+
+### 特徴、使用時のメリット
+- 既存のfloat(overflow:hiddenやclear:fix)などのレイアウトのデメリットを解消
+- 均等配置など従来のCSSでは難しかった配置が簡単にできる
+- 縦中央ぞろえなどもプロパティ1つでできる
+
+### 特徴、使用時のメリット
+- 非対応のブラウザが一部あり
+
+### ファイル構成
+- flex.html 基本的なflexのプロパティに関して(html)
+- style.css 基本的なflexのプロパティに関して(css)
+- flex2.html 主にflex-start flex-grow flex-shirkのショートハンドプロパティに関して(html)
+- style2.css 主にflex-start flex-grow flex-shirkのショートハンドプロパティに関して(css)

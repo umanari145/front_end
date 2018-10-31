@@ -17,43 +17,12 @@
       </li>
     </ul>
 
-    <p>keyframesプロパティ</p>
-		<p>@keyframes使用</p>
-		<p>duration 1 delay5
-		始まるまで少し時間がかかり(5s)
-		動作自体はすぐ(1sで)終わる
-		</p>
-		<div class="block delay5_duration1">
-		</div>
-
-		<p>duration 5 delay1
-		始まるまではすぐ(1s)
-		動作自体はゆっくり(5s)終わる</p>
-		<div class="block delay1_duration5">
-		</div>
-
-		<p>animate使用</p>
-		<p>delay1s 動作自体は５s delayは毎回かかる
-		</p>
-		<div class="block" id="animating">
-		</div>
-
-		<p>transitionでhover時の動きを使用</p>
-		<p>delay1s 動作自体は５s delayは毎回かかる
-		</p>
-		<div class="block hovering">
-		</div>
-
-		<p>delay5s 動作自体は1s delayは毎回かかる　戻るにも同じ時間がかかることに注意。
-		</p>
-		<div class="block hovering2">
-		</div>
-
-		<p>スクロール検知して挙動の変化
-		</p>
-		<div class="detect_scroll_wrapper detect_button">
-			<span class="detect_scroll_button_inner"></span>
-		</div>
+    <p class="toggle_wrapper">
+      <a href="#" class="toggle_menu">
+        <span class="first"></span>
+        <span class="second"></span>
+      </a>
+    </p>
 
 		<p>擬似要素を使った枠線効果</p>
 		<div class="block_button">
@@ -65,7 +34,10 @@
 			push
 		</div>
 
-
-
+    <p>スクロール検知して挙動の変化</p>
+		<div class="detect_scroll_wrapper detect_button">
+			<span class="detect_scroll_button_inner"></span>
+		</div>
+    
 	</body>
 </html>

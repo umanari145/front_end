@@ -1,5 +1,10 @@
 $(function(){
 
+
+  $('.toggle_menu').click(function(){
+		$(this).parent('p').toggleClass('active');
+	})
+
 	changingSize();
 
 	function changingSize(){
@@ -16,7 +21,7 @@ $(function(){
 		var imgPos = $('.detect_button').offset().top;
 		//スクロール量
 		var scrollRyou = $(window).scrollTop();
-		if (scrollRyou > imgPos -200) {
+		if (scrollRyou > imgPos -500) {
 			$('.detect_scroll_button_inner').css({
 				'width':'100px'
 			});

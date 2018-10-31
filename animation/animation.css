@@ -10,34 +10,6 @@ body{
 	padding: 100px 0;
 }
 
-.rotation{
-  list-style-type: none;
-  position: relative;
-}
-
-.rotation::before{
-  background: absolute;
-  content: '';
-  top:50%;
-  right:5px;
-  margin-top: -7px;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
-  border-left: 1px solid #000;
-  border-top: 1px solid  #000;
-  transition-delay: 0s;
-	transition-duration: 1s;
-	transition-property: all;
-	transition-timing-function: ease;
-}
-
-.rotation:hover::before{
-  transform: rotate(225deg);
-}
-
-
 .block{
 	height: 100px;
 	background: #000;
@@ -72,6 +44,74 @@ body{
 	width: 10px;
 }
 
+.rotation{
+  list-style-type: none;
+  position: relative;
+}
+
+.rotation::before{
+  background: absolute;
+  content: '';
+  top:50%;
+  right:5px;
+  margin-top: -7px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-left: 1px solid #000;
+  border-top: 1px solid  #000;
+  transition-delay: 0s;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+.rotation:hover::before{
+  transform: rotate(225deg);
+}
+
+
+.toggle_wrapper{
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.toggle_menu{
+  width: 30px;
+  height: 30px;
+  background: #ea6094;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  border-radius: 90px;
+  padding: 14px 12px;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 20px;
+}
+
+.toggle_menu span{
+  display: block;
+  height: 3px;
+  width: 24px;
+  margin: 0 0 4px 0;
+  background: #fff;
+  transition: all .6s;
+  left:3px;
+  position: absolute;
+}
+
+.first,.second{
+  transform: rotate(0deg);
+}
+
+.active .second{
+  transform: rotate(450deg);
+}
+
 .hovering{
 	width: 10px;
 	margin-left: 40px;
@@ -101,6 +141,7 @@ body{
 }
 
 .detect_scroll_wrapper{
+  margin-top: 300px;
 	width: 200px;
 	height: 100px;
 	background: #fff;

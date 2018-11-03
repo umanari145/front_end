@@ -31,24 +31,6 @@ gulp.task('watch', function() {
   })
 });
 
-
-/**
- * responsive用
- */
-gulp.task('responsive', function(){
-
-  gulp.src('responsive/src/sass/style.scss')
-  .pipe(gulp_sass({outputStyle:'expanded'}))
-  .pipe(gulp.dest('responsive'))
-
-  gulp.src('responsive/src/ejs/layout.ejs')
-    .pipe(ejs()) // 拡張子の指定
-	.pipe(rename({extname:'.html',basename:"index"}))
-  .pipe(gulp.dest('responsive/'));
-});
-
-
-
 gulp.task('default', function() {
   return runSequence(
     'server',

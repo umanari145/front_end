@@ -38,7 +38,6 @@ npm install -g node-sass
 sass sample.sass sample.css
 #監視(自動で更新される)
 sass --watch *.scss
-
 ```
 2. エディタのプラグイン
 保存時などに自動的にコンパイルされるなど
@@ -82,14 +81,44 @@ animation,transition,transformなどを使ったアニメーション
 - animation.* transitionを使った具体的なアニメーションに関して
 - original_pararax.* パララックスを扱ったサンプル
 
-## レスポンシブ
-PCとスマホを横幅(メディアクエリ)によって切り替え
+## レスポンシブ + gulp + ejs
+- PCとスマホを横幅(メディアクエリ)によって切り替え
+- gulpの実行
+- ejs テンプレート
+
+### gulp
+
+タスクランナー<br>
+ウェブ制作に置ける様々な処理を自動化させることのできるツール。
+
+- less/sassのコンパイル
+- ローカルサーバーの起動と自動更新
+- ejsのコンパイル
+- 監視
+- etc・・・
+
+### インストール
+参考リンク https://ics.media/entry/3290
+Mac,Win共通
+1. https://nodejs.org/ja/download/ よりソースをダウンロード
+2. npm -vでバージョンが表示されればOK
+3. ```npm install``` package.jsonより関連ライブラリがインストールされる
+4. ```mv gulpfile1.js gulpfile.js```
+5. ```npx gulp sample_task```
+6. ```npx gulp```
 
 ### ファイル構成
 - responsive以下
-- index.html
-- style.css
+- index.html 生成されたhtml
+- style.css  生成されたcss
 - image サンプル画像
+- src
+  - ejs
+    - header.ejs  ヘッダー
+    - index.ejs   本体
+    - layout.ejs  layoutファイル
+  - sass
+    - style.scss
 
 ## PHPスクール題材
 
@@ -108,3 +137,7 @@ PCとスマホを横幅(メディアクエリ)によって切り替え
   - style.scss 実際にコンパイルされるscssファイル
   - style.css 実際に読み込まれるCSS
 - images 画像
+
+### 実行
+1. ```mv gulpfile2.js gulpfile.js```
+3. ```npx gulp```

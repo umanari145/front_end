@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <meta charset="UTF-8">
+    <title>vertical-align</title>
+<style>
+html{
+	line-height: 1.6em;
+}
+
+.parent{
+	width: 500px;
+	height: 100px;
+	background-color: #e6e6fa
+}
+
+.parent2{
+	width: 500px;
+	background-color: #e6e6fa
+}
+
+.child{
+	background: #008080;
+}
+
+.tbl{
+	display: table;
+}
+
+.tbl-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.blk{
+	display: block;
+	vertical-align: bottom;
+}
+
+.inl-blk{
+	width: 100px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.inspan{
+	vertical-align: middle;
+}
+
+</style>
+    <body>
+		<p>親 display:table </p>
+		<p>子供　display:table-cell vertical-align:middle</p>
+		<p>きく</p>
+		<div class="tbl parent">
+            <div class="tbl-cell child">list1</div>
+            <div class="tbl-cell child">list2</div>
+            <div class="tbl-cell child">list3</div>
+        </div>
+
+		<p>親 display:block </p>
+		<p>子供ただのspanでvertical-align:middleを設定</p>
+		<p>きかない</p>
+		<div class="inspan parent">
+			<span class="child" style="vertical-align: middle;">list1</span>
+		</div>
+
+		<p>親 display:block </p>
+		<p>子供ただのpでvertical-align:middleを設定</p>
+		<p>きかない</p>
+		<div class="parent">
+			<p class="child" style="height:60px;vertical-align:bottom;">あとここにでては来ませんが背景画像でワンポイントものをバックにしたいときもあるので</p>
+		</div>
+
+
+		<p>親 display:block </p>
+		<p>子供　display:inline-block vertical-align:middle</p>
+		<p>きかない vertical-align:-20pxなどはきく</p>
+		<div class="blk parent">
+			<div class="inl-blk child">list1</div>
+			<div class="inl-blk child">list1</div>
+			<div class="inl-blk child">list1</div>
+		</div>
+
+		<p>親 display:block </p>
+		<p>子供　display:inline-block vertical-align:middle</p>
+		<p>きかない vertical-align:middleきく　どうやら各要素の中央値を基準にしているらしい</p>
+		<div class="blk parent">
+			<div class="inl-blk child">list1あ</div>
+			<div class="inl-blk child">list1あとここにでては来ませんが背</div>
+			<div class="inl-blk child">list1あとここにでては来ませんが背list1あとこ</div>
+		</div>
+    </body>
+</html>

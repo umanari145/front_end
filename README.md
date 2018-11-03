@@ -1,5 +1,10 @@
 # front_end
 
+
+## basic
+CSSで気をつけるべきポイント
+- basic/css_tips.md に記載
+
 ## sass
 CSSプリプロセッサ
 
@@ -100,4 +105,6 @@ PCとスマホを横幅(メディアクエリ)によって切り替え
   - _header.css ヘッダー    
   - _footer.css フッター
   - _top.css トップ画面固有のCSS
+  - style.scss 実際にコンパイルされるscssファイル
+  - style.css 実際に読み込まれるCSS
 - images 画像

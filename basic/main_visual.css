@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body{
+	padding: 100px 0;
+}
+.main_visual{
+	width: 100%;
+	background-image: url(background_sample.jpg);
+}
+.cover{
+	height: 300px;
+	background-size: cover;
+}
+
+.contain{
+	height: 300px;
+	background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.cover_left_top{
+	background-position: left top;
+}
+.cover_right_bottom{
+	background-position: right bottom;
+}
+.cover_center{
+	background-position: center center;
+}
+.cover_num{
+	background-position: center 50%;
+}
+.shinshuku{
+	padding-top: calc(1536/2048 * 100%);
+	background-size: 100% 100%;
+}
+.tadanohako{
+	width: 100%;
+}
+.shinshuku2{
+	width: 100%;
+	height: auto;
+}
+.tadanohako2{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+.cover_center2{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: auto;
+}

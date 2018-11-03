@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <meta charset="UTF-8">
+    <title>main_visual</title>
+	<link rel="stylesheet" type="text/css" href="main_visual.css">
+    <body>
+
+		<p>背景画像　backgroundで指定</p>
+
+		<p>領域に合わせて画像伸縮可視領域変わらない　padding %で幅固定</p>
+		<div class="main_visual shinshuku">
+		</div>
+
+		<p>cover 縦横一定　伸縮するとそれに合わせて可視領域が変わる 左上に合わせる(ディフォルト)</p>
+		<div class="main_visual cover cover_left_top">
+		</div>
+
+		<p>cover 縦横一定　伸縮するとそれに合わせて可視領域が変わる 右下に合わせる</p>
+		<div class="main_visual cover cover_right_bottom">
+		</div>
+
+		<p>cover 縦横一定　伸縮するとそれに合わせて可視領域が変わる 中央に合わせる</p>
+		<div class="main_visual cover cover_center">
+		</div>
+
+		<p>cover 縦横一定　伸縮するとそれに合わせて可視領域が変わる 中央に合わせる　数字</p>
+		<div class="main_visual cover cover_num">
+		</div>
+
+    <p>contain 縦一定(幅に収まるような最小のサイズを取る)</p>
+		<div class="main_visual contain">
+		</div>
+
+		<p>imgタグで設定</p>
+
+		<p>領域に合わせて画像伸縮 可視領域変わらない　padding %で幅固定</p>
+		<div class="tadanohako">
+			<img src="background_sample.jpg" class="shinshuku2">
+		</div>
+
+		<p>transformの活用 縦横一定　伸縮するとそれに合わせて可視領域が変わる 中央揃え</p>
+		<div class="tadanohako2">
+			<img src="background_sample.jpg" class="cover_center2">
+		</div>
+
+	</body>
+</html>

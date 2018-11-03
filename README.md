@@ -21,17 +21,20 @@ Windows
 Mac,Linux
 
 ```
-
 npm install -g node-sass
-
 
 ```
 
 ### コンパイル方法
 
-1. コマンドラインで直接
-ex.sass sample.sass sample.css
+1. コマンドラインで直接&監視コマンド
+```
+#一番シンプルなコマンド
+sass sample.sass sample.css
+#監視(自動で更新される)
+sass --watch *.scss
 
+```
 2. エディタのプラグイン
 保存時などに自動的にコンパイルされるなど
 ex. atomのsass-autocompile
@@ -71,9 +74,8 @@ animation,transition,transformなどを使ったアニメーション
 ### ファイル構成
 - animation以下
 - animation_basic.html animation,transitionなどの基本的な使い方について
-- animation.html transitionを使った具体的なアニメーションに関して(html)
-- animation.css transitionを使った具体的なアニメーションに関して(css)
-- animation.js transitionを使った具体的なアニメーションに関して(js)
+- animation.* transitionを使った具体的なアニメーションに関して
+- original_pararax.* パララックスを扱ったサンプル
 
 ## レスポンシブ
 PCとスマホを横幅(メディアクエリ)によって切り替え
@@ -83,3 +85,19 @@ PCとスマホを横幅(メディアクエリ)によって切り替え
 - index.html
 - style.css
 - image サンプル画像
+
+## PHPスクール題材
+
+### ファイル構成
+- phpschool以下
+- index.html
+- css
+  - _variables.scss 変数
+  - _mixins.scss 関数
+  - _reset.scss リセットCSS
+  - _common.scss 共通情報  
+  - _parts.scss パーツ(サイドのリンクなど)
+  - _header.css ヘッダー    
+  - _footer.css フッター
+  - _top.css トップ画面固有のCSS
+- images 画像

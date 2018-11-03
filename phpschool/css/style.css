@@ -100,31 +100,6 @@ div, p, th, td, li, a {
   margin: 0 auto;
 }
 
-#page-top {
-  position: fixed;
-  z-index: 9999;
-  bottom: 100px;
-  right: 0px;
-  font-size: 12px;
-}
-
-#page-top a {
-  background: #665e53;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  display: block;
-  -moz-opacity: 0.3;
-  -webkit-opacity: 0.3;
-  -ms-opacity: 0.3;
-  opacity: 0.3;
-}
-
-#page-top a:hover {
-  background: #999;
-}
-
 .side_link {
   position: fixed;
   right: -222px;

@@ -15,7 +15,7 @@ const browserReload = function() {
 
 const compileSass = function(){
   console.log('sass execute')
-  return gulp.src(['./phpschool/css/style2.scss'])
+  return gulp.src(['./phpschool/css/style.scss'])
       .pipe(gulp_sass({outputStyle:'expanded'}))
       .pipe(gulp.dest('./phpschool/css'))
 }

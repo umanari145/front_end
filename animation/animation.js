@@ -2,7 +2,7 @@ $(function(){
 
 
   $('.toggle_menu').click(function(){
-		$(this).parent('p').toggleClass('active');
+		$(this).parent('.toggle_wrapper').toggleClass('active');
 	})
 
 	changingSize();

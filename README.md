@@ -63,3 +63,12 @@ ex. atomのsass-autocompile
 - style.css 基本的なflexのプロパティに関して(css)
 - flex2.html 主にflex-start flex-grow flex-shirkのショートハンドプロパティに関して(html)
 - style2.css 主にflex-start flex-grow flex-shirkのショートハンドプロパティに関して(css)
+
+## アニメーション関連
+- animation,transition,transformなどを使ったアニメーション
+
+### ファイル構成
+- animation_basic.html animation,transitionなどの基本的な使い方について
+- animation.html transitionを使った具体的なアニメーションに関して(html)
+- animation.css transitionを使った具体的なアニメーションに関して(css)
+- animation.js transitionを使った具体的なアニメーションに関して(js)

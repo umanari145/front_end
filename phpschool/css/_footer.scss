@@ -7,26 +7,45 @@ footer {
 	.inner_footer_nav{
 	  display: flex;
 		justify-content: space-between;
+		@include mq-sp(){
+			flex-direction: column;
+		};
 		.footer_wrap {
-			flex: 0 0 33.3%;
+			flex: 1 0 33.3%;
 			margin: 0 0 10px;
-			padding-right: 5px;
-	  	.footer_nav ul {
-	    	display: inline-block;
-				vertical-align: top;
-	  		line-height: 2.3;
-	    	&:first-child{
-	      	margin-right: 5px;
-	    	}
-				li a{
-					color: #fff!important;
-					&:before{
-						font-family: FontAwesome;
-						content: "\f0da";
-						margin-right: 5px;
-					}
+			@include mq-sp(){
+				.logo{
+					text-align: center;
 				}
-	  	}
+			};
+			padding-right: 5px;
+	  	.footer_nav {
+				display: flex;
+				@include mq-sp(){
+					flex-direction: column;
+				};
+				ul {
+					vertical-align: top;
+	  			line-height: 2.3;
+	    		&:first-child{
+	  	    	margin-right: 5px;
+		    	}
+					li {
+						@include mq-sp(){
+							padding: 5px 0 5px 10px;
+							border-top: 1px solid #fff;
+						}
+						a{
+							color: #fff!important;
+							&:before{
+								font-family: FontAwesome;
+								content: "\f0da";
+								margin-right: 5px;
+							}
+						}
+					}
+	  		}
+			}
 		}
 	}
 	.copy {

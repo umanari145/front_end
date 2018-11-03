@@ -7,11 +7,13 @@
 }
 
 #head_copy{
-	font-size: 1.3rem;
+	font-size: 1.4rem;
+	@include mq-sp(){
+		font-size: 1.3rem;
+	};
 }
 
 .header_upper{
-
 	display: flex;
 	justify-content: space-between;
 	@include mq-sp(){
@@ -19,8 +21,11 @@
 	}
 	.logo{
 		white-space:nowrap;
+		@include mq-sp(){
+			text-align: center;
+		};
 		.dt_logo{
-			max-width: 155px;
+			max-width: 156px;
 		}
 		.phpschool_log{
 			max-width: 150px;
@@ -30,6 +35,9 @@
 			.header_link, .header_info{
 			display: flex;
 			justify-content: flex-end;
+			@include mq-sp(){
+				justify-content: center;
+			};
 			li{
 				margin-right: 10px;
 				&:before{
@@ -39,6 +47,9 @@
 			}
 		}
 		.header_link{
+			@include mq-sp(){
+				margin: 10px 0;
+			};
 			li{
 				&:before{
 					content: "\f0da";
@@ -52,6 +63,10 @@
 				font-size: 2.2rem;
 				line-height: 1.0;
 				padding-top: 5px;
+				@include mq-sp(){
+					font-size: 1.6rem;
+					padding: 0 5px;
+				};
 				&.tel_list{
 					&:before{
 						content: "\f095";
@@ -69,12 +84,20 @@
 
 .header_nav {
 	ul{
+		width: 100%;
 		display: flex;
 		justify-content:space-between;
+		@include mq-sp(){
+			margin-top: 10px;
+			flex-wrap: wrap;
+		};
 		li{
 			//余った幅をとる
 			flex:1 1 auto;
 			align-items: center;
+			@include mq-sp(){
+				flex: 0 0 25%;
+			};
 			a{
 				display: block;
 				height: 90%;

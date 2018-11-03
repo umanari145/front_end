@@ -3,6 +3,7 @@
   .w970{
     padding: 50px 10px;
     text-align: center;
+    position: relative;
     z-index: 0;
   }
   p{
@@ -11,7 +12,7 @@
 }
 
 .import{
-  color: red;
+  color: #ff0000;
   font-weight: bold;
 }
 
@@ -42,6 +43,18 @@
   font-weight: bold;
   text-align: center;
   padding: 10px 25px;
+  @include mq-sp(){
+    padding: 0;
+    font-size: 2.6rem;
+    text-align: center;
+    /** 透過処理の上に配置したい為 **/
+    position: relative;
+    z-index: 100;
+    line-height: 1.3;
+    br.sp{
+      display: block! important;
+    }
+  };
 }
 
 .top_img{
@@ -53,6 +66,9 @@
       top: 45%;
       left: 26.5%;
       width: 48%;
+      @include mq-sp(){
+        font-size: 1.7vw;
+      };
       ul{
         display: flex;
         justify-content: space-between;
@@ -66,12 +82,18 @@
           line-height: 0.9;
           text-align: center;
         	white-space: nowrap;
+          @include mq-sp(){
+            font-size: 5.6vw;
+          };
           &:after{
             font-size: 18px;
           }
           &.name{
             &:after{
           	  content: "名";
+              @include mq-sp(){
+                font-size: 3vw;
+              };
             }
           }
           &.percent{
@@ -85,6 +107,9 @@
             color: #fff;
             text-align: left;
             line-height: 1.2;
+            @include mq-sp(){
+              font-size: 2.4vw;
+            };
           }
         }
       }
@@ -103,6 +128,23 @@
   background: url("#{$image_path}1369e8024cf51a6585381076715a38e6_l.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
+  @include mq-sp(){
+    background-position:10% 50%;
+    position: relative;
+    .top_text{
+      &:before{
+        z-index: 0;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:rgba(255,255,255,0.7);
+      }
+    }
+  };
   ul{
     margin: 0 auto;
     max-width: 580px;
@@ -128,6 +170,9 @@
 
 .box_02text{
   padding: 50px 20px;
+  @include mq-sp(){
+    padding: 40px 10px;
+  };
   background: url("#{$image_path}/bg_dot.gif"), rgba(0,0,0,0.6);
   color: #fff;
   .inner_box{
@@ -138,6 +183,10 @@
     margin: 0 auto;
     text-shadow: 0px 0px 3px #060606;
     font-size: 17px;
+    @include mq-sp(){
+      font-size: 1.5rem;
+      text-align: left;
+    };
   }
 }
 
@@ -147,12 +196,15 @@
     .inner_area{
       display: flex;
       justify-content: space-between;
+      @include mq-sp(){
+        flex-direction: column;
+      };
     }
     .L{
-      flex: 0 0 70%;
+      flex: 1 0 70%;
     }
     .R{
-      flex: 0 0 30%;
+      flex: 1 0 30%;
       .glaf{
         display: flex;
         justify-content: center;
@@ -171,9 +223,6 @@
           }
         }
       }
-      .caption{
-        font-size: 1.2rem;
-      }
     }
     p{
       margin: 10px 0;
@@ -181,10 +230,21 @@
   }
   .strong{
     font-size: 2.7rem;
+    @include mq-sp(){
+      font-size: 2.5rem;
+      text-align: center;
+    };
+
     span{
       font-size: 4.1rem;
+      @include mq-sp(){
+        font-size: 3.0rem;
+      };
     }
   }
+}
+.caption{
+  font-size: 1.3rem;
 }
 
 .odd{

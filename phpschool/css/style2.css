@@ -171,7 +171,13 @@ div, p, th, td, li, a {
 }
 
 #head_copy {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 767px) {
+  #head_copy {
+    font-size: 1.3rem;
+  }
 }
 
 .header_upper {
@@ -189,8 +195,14 @@ div, p, th, td, li, a {
   white-space: nowrap;
 }
 
+@media only screen and (max-width: 767px) {
+  .header_upper .logo {
+    text-align: center;
+  }
+}
+
 .header_upper .logo .dt_logo {
-  max-width: 155px;
+  max-width: 156px;
 }
 
 .header_upper .logo .phpschool_log {
@@ -202,6 +214,12 @@ div, p, th, td, li, a {
   justify-content: flex-end;
 }
 
+@media only screen and (max-width: 767px) {
+  .header_upper .sub_nav .header_link, .header_upper .sub_nav .header_info {
+    justify-content: center;
+  }
+}
+
 .header_upper .sub_nav .header_link li, .header_upper .sub_nav .header_info li {
   margin-right: 10px;
 }
@@ -209,6 +227,12 @@ div, p, th, td, li, a {
 .header_upper .sub_nav .header_link li:before, .header_upper .sub_nav .header_info li:before {
   margin-right: 5px;
   font-family: FontAwesome;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_upper .sub_nav .header_link {
+    margin: 10px 0;
+  }
 }
 
 .header_upper .sub_nav .header_link li:before {
@@ -226,6 +250,13 @@ div, p, th, td, li, a {
   padding-top: 5px;
 }
 
+@media only screen and (max-width: 767px) {
+  .header_upper .sub_nav .header_info li {
+    font-size: 1.6rem;
+    padding: 0 5px;
+  }
+}
+
 .header_upper .sub_nav .header_info li.tel_list:before {
   content: "\f095";
 }
@@ -235,13 +266,27 @@ div, p, th, td, li, a {
 }
 
 .header_nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_nav ul {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
 }
 
 .header_nav ul li {
   flex: 1 1 auto;
   align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_nav ul li {
+    flex: 0 0 25%;
+  }
 }
 
 .header_nav ul li a {
@@ -370,20 +415,48 @@ footer .inner_footer_nav {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 767px) {
+  footer .inner_footer_nav {
+    flex-direction: column;
+  }
+}
+
 footer .inner_footer_nav .footer_wrap {
-  flex: 0 0 33.3%;
+  flex: 1 0 33.3%;
   margin: 0 0 10px;
   padding-right: 5px;
 }
 
+@media only screen and (max-width: 767px) {
+  footer .inner_footer_nav .footer_wrap .logo {
+    text-align: center;
+  }
+}
+
+footer .inner_footer_nav .footer_wrap .footer_nav {
+  display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .inner_footer_nav .footer_wrap .footer_nav {
+    flex-direction: column;
+  }
+}
+
 footer .inner_footer_nav .footer_wrap .footer_nav ul {
-  display: inline-block;
   vertical-align: top;
   line-height: 2.3;
 }
 
 footer .inner_footer_nav .footer_wrap .footer_nav ul:first-child {
   margin-right: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .inner_footer_nav .footer_wrap .footer_nav ul li {
+    padding: 5px 0 5px 10px;
+    border-top: 1px solid #fff;
+  }
 }
 
 footer .inner_footer_nav .footer_wrap .footer_nav ul li a {
@@ -443,6 +516,7 @@ footer .copy {
 .top_box .w970 {
   padding: 50px 10px;
   text-align: center;
+  position: relative;
   z-index: 0;
 }
 
@@ -451,7 +525,7 @@ footer .copy {
 }
 
 .import {
-  color: red;
+  color: #ff0000;
   font-weight: bold;
 }
 
@@ -484,6 +558,21 @@ footer .copy {
   padding: 10px 25px;
 }
 
+@media only screen and (max-width: 767px) {
+  .top_title {
+    padding: 0;
+    font-size: 2.6rem;
+    text-align: center;
+    /** 透過処理の上に配置したい為 **/
+    position: relative;
+    z-index: 100;
+    line-height: 1.3;
+  }
+  .top_title br.sp {
+    display: block !important;
+  }
+}
+
 .top_img {
   background: url("../images/top_main_bg.png") repeat-x;
 }
@@ -497,6 +586,12 @@ footer .copy {
   top: 45%;
   left: 26.5%;
   width: 48%;
+}
+
+@media only screen and (max-width: 767px) {
+  .top_img .inner_box .top_img_text {
+    font-size: 1.7vw;
+  }
 }
 
 .top_img .inner_box .top_img_text ul {
@@ -516,12 +611,24 @@ footer .copy {
   white-space: nowrap;
 }
 
+@media only screen and (max-width: 767px) {
+  .top_img .inner_box .top_img_text ul li {
+    font-size: 5.6vw;
+  }
+}
+
 .top_img .inner_box .top_img_text ul li:after {
   font-size: 18px;
 }
 
 .top_img .inner_box .top_img_text ul li.name:after {
   content: "名";
+}
+
+@media only screen and (max-width: 767px) {
+  .top_img .inner_box .top_img_text ul li.name:after {
+    font-size: 3vw;
+  }
 }
 
 .top_img .inner_box .top_img_text ul li.percent:after {
@@ -536,6 +643,12 @@ footer .copy {
   line-height: 1.2;
 }
 
+@media only screen and (max-width: 767px) {
+  .top_img .inner_box .top_img_text ul li span {
+    font-size: 2.4vw;
+  }
+}
+
 .top_img .inner_box .top_img_text .present_date {
   text-align: right;
   color: #fff;
@@ -548,6 +661,24 @@ footer .copy {
   background: url("../images/1369e8024cf51a6585381076715a38e6_l.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .top_box_02 {
+    background-position: 10% 50%;
+    position: relative;
+  }
+  .top_box_02 .top_text:before {
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 }
 
 .top_box_02 ul {
@@ -581,6 +712,12 @@ footer .copy {
   color: #fff;
 }
 
+@media only screen and (max-width: 767px) {
+  .box_02text {
+    padding: 40px 10px;
+  }
+}
+
 .box_02text .inner_box {
   padding: 0;
 }
@@ -592,6 +729,13 @@ footer .copy {
   font-size: 17px;
 }
 
+@media only screen and (max-width: 767px) {
+  .box_02text p {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
+
 .top_box_03 {
   margin-bottom: 30px;
 }
@@ -601,12 +745,18 @@ footer .copy {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 767px) {
+  .top_box_03 .box_04_upper .inner_area {
+    flex-direction: column;
+  }
+}
+
 .top_box_03 .box_04_upper .L {
-  flex: 0 0 70%;
+  flex: 1 0 70%;
 }
 
 .top_box_03 .box_04_upper .R {
-  flex: 0 0 30%;
+  flex: 1 0 30%;
 }
 
 .top_box_03 .box_04_upper .R .glaf {
@@ -630,10 +780,6 @@ footer .copy {
   color: #f05757;
 }
 
-.top_box_03 .box_04_upper .R .caption {
-  font-size: 1.2rem;
-}
-
 .top_box_03 .box_04_upper p {
   margin: 10px 0;
 }
@@ -642,8 +788,25 @@ footer .copy {
   font-size: 2.7rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .top_box_03 .strong {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
 .top_box_03 .strong span {
   font-size: 4.1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .top_box_03 .strong span {
+    font-size: 3.0rem;
+  }
+}
+
+.caption {
+  font-size: 1.3rem;
 }
 
 .odd {

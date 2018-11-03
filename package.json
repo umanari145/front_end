@@ -1,0 +1,25 @@
+{
+  "name": "front_end",
+  "version": "1.0.0",
+  "description": "## sass CSSプリプロセッサ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umanari145/front_end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umanari145/front_end/issues"
+  },
+  "homepage": "https://github.com/umanari145/front_end#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "run-sequence": "^2.2.1"
+  }
+}

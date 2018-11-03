@@ -12,32 +12,32 @@
 
       <p>keyframesプロパティ</p>
   		<p>@keyframes使用</p>
-  		<p>duration 1 delay5
-  		始まるまで少し時間がかかり(5s)
-  		動作自体はすぐ(1sで)終わる
+  		<p>
+  		始まるまですぐ(1s)
+  		動作自体はゆっくり(1sで)終わる
   		</p>
   		<div class="block delay5_duration1">
   		</div>
 
-  		<p>duration 5 delay1
-  		始まるまではすぐ(1s)
-  		動作自体はゆっくり(5s)終わる</p>
+  		<p>
+  		始まるまではゆっくり(1s)
+  		動作自体はすぐ(0.5s)終わる</p>
   		<div class="block delay1_duration5">
   		</div>
 
-  		<p>animate使用</p>
-  		<p>delay1s 動作自体は５s delayは毎回かかる
+  		<p>animate(JavaScript)使用</p>
+  		<p>delay1s 動作自体は0.1s
   		</p>
   		<div class="block" id="animating">
   		</div>
 
   		<p>transitionでhover時の動きを使用</p>
-  		<p>delay1s 動作自体は５s delayは毎回かかる
+  		<p>delay1s 動作自体は0.1s
   		</p>
   		<div class="block hovering">
   		</div>
 
-  		<p>delay5s 動作自体は1s delayは毎回かかる　戻るにも同じ時間がかかることに注意。
+  		<p>delay0.1s 動作自体は1s
   		</p>
   		<div class="block hovering2">
   		</div>

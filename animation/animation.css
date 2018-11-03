@@ -16,19 +16,23 @@ body{
 }
 
 .delay5_duration1{
-	animation-name: sizeChange;
-    animation-duration: 1s;
-    animation-timing-function: liner;
-    animation-delay: 5s;
-    animation-iteration-count: infinite;
+  animation: sizeChange 1s linear 0.5s infinite;
+  /*
+  対象のCSS
+  animation-name: sizeChange;
+  持続時間
+  animation-duration: 1s;
+  動きの種類llinear,easeなど
+  animation-timing-function: linear;
+  開始時間
+  animation-delay: .5s;
+  繰り返し回数 infine, 数値指定
+  animation-iteration-count: infinite;
+*/
 }
 
 .delay1_duration5{
-	animation-name: sizeChange;
-    animation-duration: 5s;
-    animation-timing-function: liner;
-    animation-delay: 1s;
-	animation-iteration-count: infinite;
+  animation: sizeChange .5s linear 1s infinite;
 }
 
 @keyframes  sizeChange{
@@ -42,6 +46,42 @@ body{
 
 #animating{
 	width: 10px;
+}
+
+.hovering{
+	width: 10px;
+	margin-left: 40px;
+  transition: all .1s ease 1s;
+  /*
+  対象となるプロパティ(全てはall)
+  transition-property:all;
+  持続時間
+  transition-duration:.1s;
+  動きの種類llinear,easeなど
+  transition-timing-function:ease;
+  開始時間
+  transition-delay:1s;
+  */
+}
+
+.hovering:hover{
+	width: 100px;
+	margin-left: 0;
+}
+
+.hovering2{
+	width: 10px;
+	margin-left: 40px;
+  transition: all 1s ease .1s;
+}
+
+.hovering2:hover{
+	width: 100px;
+	margin-left: 0;
+}
+
+.rotation_block{
+  padding: 0;
 }
 
 .rotation{
@@ -61,11 +101,9 @@ body{
   transform: rotate(45deg);
   border-left: 1px solid #000;
   border-top: 1px solid  #000;
-  transition-delay: 0s;
-	transition-duration: 1s;
-	transition-property: all;
-	transition-timing-function: ease;
+  transition: all 1s ease;
 }
+
 
 .rotation:hover::before{
   transform: rotate(225deg);
@@ -112,33 +150,6 @@ body{
   transform: rotate(450deg);
 }
 
-.hovering{
-	width: 10px;
-	margin-left: 40px;
-	transition-delay: 1s;
-	transition-duration: 5s;
-	transition-property: all;
-	transition-timing-function: ease;
-}
-
-.hovering:hover{
-	width: 100px;
-	margin-left: 0;
-}
-
-.hovering2{
-	width: 10px;
-	margin-left: 40px;
-	transition-delay: 5s;
-	transition-duration: 1s;
-	transition-property: all;
-	transition-timing-function: ease;
-}
-
-.hovering2:hover{
-	width: 100px;
-	margin-left: 0;
-}
 
 .detect_scroll_wrapper{
   margin-top: 300px;

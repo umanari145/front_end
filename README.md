@@ -125,17 +125,24 @@ Mac,Win共通
 ### ファイル構成
 - phpschool以下
 - index.html
+- src(コンパイル元ファイル)
+  - css
+      - _variables.scss 変数
+      - _mixins.scss 関数
+      - _reset.scss リセットCSS
+      - _common.scss 共通情報  
+      - _parts.scss パーツ(サイドのリンクなど)
+      - _header.css ヘッダー    
+      - _footer.css フッター
+      - _top.css トップ画面固有のCSS
+  - ejs
+      - footer.ejs フッター
+      - header.ejs ヘッダー
+      - index.ejs トップのHTML
+      - layout.ejs レイアウトファイル
+      - parts.ejs 他パーツ
 - css
-  - _variables.scss 変数
-  - _mixins.scss 関数
-  - _reset.scss リセットCSS
-  - _common.scss 共通情報  
-  - _parts.scss パーツ(サイドのリンクなど)
-  - _header.css ヘッダー    
-  - _footer.css フッター
-  - _top.css トップ画面固有のCSS
-  - style.scss 実際にコンパイルされるscssファイル
-  - style.css 実際に読み込まれるCSS
+  - style.css 実際に読み込まれるCSS 
 - images 画像
 
 ### 実行

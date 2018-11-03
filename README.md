@@ -1,6 +1,6 @@
 # front_end
 
-## sass(scss)
+## sass
 CSSプリプロセッサ
 
 ### 特徴、使用時のメリット
@@ -40,6 +40,7 @@ ex. atomのsass-autocompile
 ファイル更新時に自動的に保存されるなど
 
 ### ファイル構成
+- sass以下
 - index.html HTML
 - sample.scss 元となるscssファイル
 - sample.css 生成されたcss
@@ -65,10 +66,20 @@ ex. atomのsass-autocompile
 - style2.css 主にflex-start flex-grow flex-shirkのショートハンドプロパティに関して(css)
 
 ## アニメーション関連
-- animation,transition,transformなどを使ったアニメーション
+animation,transition,transformなどを使ったアニメーション
 
 ### ファイル構成
+- animation以下
 - animation_basic.html animation,transitionなどの基本的な使い方について
 - animation.html transitionを使った具体的なアニメーションに関して(html)
 - animation.css transitionを使った具体的なアニメーションに関して(css)
 - animation.js transitionを使った具体的なアニメーションに関して(js)
+
+## レスポンシブ
+PCとスマホを横幅(メディアクエリ)によって切り替え
+
+### ファイル構成
+- responsive以下
+- index.html
+- style.css
+- image サンプル画像

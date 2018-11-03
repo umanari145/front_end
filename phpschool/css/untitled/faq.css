@@ -1,0 +1,40 @@
+/*-----------------------------------------------
+「よくある質問」ページ専用
+-----------------------------------------------*/
+#lowerContentLeft .faq_block {
+	width:620px;
+	margin:20px auto;
+	border-bottom:#BDBDAE 1px dashed;
+	padding:0 0 20px 0;
+	}
+	
+#lowerContentLeft .faq_block p{
+	width:580px;
+	margin:5px 0 12px 0;
+	line-height:24px;
+	text-indent:0;
+	}
+#lowerContentLeft .faq_block ul{
+	margin:0 0 0 14px;
+	}
+#lowerContentLeft .faq_block li{
+	list-style:outside disc;
+	margin:0 0 12px 0;
+	}
+
+
+#lowerContentLeft .question {
+	padding:10px 20px;
+	}
+
+
+#lowerContentLeft .answer {
+	background-color:#F0F9FB;
+	padding:10px 20px;
+	}
+
+/*-----------------------------------------------
+「よくある質問」ページ専用
+=================================================
+文字
+-----------------------------------------------*/

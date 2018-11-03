@@ -1,0 +1,53 @@
+#page-top{
+  position: fixed;
+  z-index: 9999;
+  bottom: 100px;
+  right: 0px;
+  font-size: 12px;
+  a{
+    background: #665e53;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    @include opacity(0.3);
+    &:hover{
+      background: #999;
+    }
+  }
+}
+
+.side_link{
+  position: fixed;
+  right: -222px;
+  top: 40%;
+  width: 265px;
+  ul{
+    li{
+      position: relative;
+      height: 60px;
+      a{
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.5s;
+        width: 100%;
+        font-size: 26px;
+        color: #fff;
+        background: #00945e;
+        padding: 10px;
+        line-height: 1;
+        @include box-shadow(-1px, 2px, 13px, -4px, #000000);
+        &:hover{
+          right: 220px;
+        }
+        i{
+          &.fa{
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

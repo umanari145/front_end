@@ -1,0 +1,85 @@
+/*-----------------------------------------------
+「受講生のみなさんへ」ページ専用
+-----------------------------------------------*/
+#lowerContentLeft div.declar{
+    width:642px;
+    height:371px;
+    background:url('../image/tostudent/greeting.jpg') no-repeat;
+    margin:15px;
+    padding: 25px 50px 20px 50px;
+    font-size:16pt;
+    line-height:2.0em;
+    font-weight:bold;
+}
+
+#lowerContentLeft div.declar p.greeting_msg{
+    margin:25px 0;
+    line-height:2.0em;
+}
+
+#lowerContentLeft p.greeting{
+    font-size:18pt;
+    margin:20px 0 0 220px;
+}
+
+#lowerContentLeft p.greeting{
+    font-size:15pt;
+    margin:20px 0 0 220px;
+}
+
+
+
+
+#lowerContentLeft div.contents_box {
+    width: 630px;
+    background-color: #F0F9FB;
+    line-height:1.8em;
+    margin: -12px 20px 30px 10px;
+    padding: 10px;
+}
+
+#lowerContentLeft div.contents_box h2{
+    font-family:'メイリオ';
+    font-size:14pt;   
+    margin:5px 0 15px 5px;   
+}
+
+#lowerContentLeft div.contents_box p{
+    font-size:12pt;
+    padding:8px;   
+    margin: 0 15px 10px 15px;
+}
+
+#lowerContentLeft div.contents_box p.from{
+    font-size:12pt;
+    margin-left:270px;
+}
+
+
+#lowerContentLeft div.contents_box span.subtitile{
+    display:block;
+    font-weight:bold;
+    font-size:16pt;
+    margin:20px 0;
+    
+}
+
+#lowerContentLeft div.contents_box span.important{
+    background-color:#FCF;
+}
+#lowerContentLeft div.contents_box ul li{
+    font-size:12pt;
+    padding:8px;   
+}
+
+#lowerContentLeft div.contents_box span.can_know_subtitle{
+    font-size:13pt;
+    font-weight:bold;
+}
+
+#lowerContentLeft div.contents_box p.greatman_msg{
+    width:70%;
+    text-align:center;
+    margin:20px auto ;
+    font-size:15pt;
+}

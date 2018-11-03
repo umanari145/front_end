@@ -1,0 +1,46 @@
+@mixin mq-sp($max: $sp-max-width){
+	@media only screen and (max-width: #{$max}){
+		@content;
+	}
+}
+
+@mixin mq-pc($min: $pc-min-width){
+	@media only screen and (min-width: #{$mix}){
+		@content;
+	}
+}
+
+@mixin opacity ($opacity:0){
+	-moz-opacity: $opacity;
+	-webkit-opacity: $opacity;
+	-ms-opacity: $opacity;
+	opacity: $opacity;
+}
+
+@mixin box-shadow ($x:0, $y:0, $blur:0, $spread:0, $color:'#000'){
+	-moz-box-shadow:$x $y $blur $spread $color;
+	-webkit-box-shadow:$x $y $blur $spread $color;
+	-ms-transition: $x $y $blur $spread $color;
+	box-shadow:$x $y $blur $spread $color;
+}
+
+@mixin transition ($move:'opacity', $seconds:1s){
+	-webkit-transition: $move $seconds;
+	-moz-transition: $move $seconds;
+	-ms-transition: $move $seconds;
+	transition: $move $seconds;
+}
+
+@mixin box-sizing($prop:'border-box') {
+	-webkit-box-sizing: $prop;
+	-moz-box-sizing: $prop;
+	-ms-box-sizing: $prop;
+	box-sizing: $prop;
+}
+
+@mixin rotate ($deg:0deg){
+	-moz-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg);
+}

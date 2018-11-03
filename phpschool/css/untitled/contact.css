@@ -1,0 +1,116 @@
+/*-----------------------------------------------
+お問い合わせページ専用
+-----------------------------------------------*/
+.contact h2{
+	margin:0;
+	}
+
+#contact_explain h4{
+	background-image:url(../image/contact/arrow_black.gif);
+	padding:0 0 0 20px;
+	margin:15px 0 10px 20px;
+	background-repeat:no-repeat;
+	font-size:16px;
+	clear:both;
+	}
+table.contact_table {
+	border-top:#CCC 1px solid;
+	border-left:#CCC 1px solid;
+	width:650px;
+	margin:10px auto;
+	}
+table.contact_table td.date{
+	background-color:#F7F5F1;
+	border-bottom:#CCC 1px solid;
+	border-right:#CCC 1px solid;
+	padding:5px 10px;
+	width:150px;
+	}
+table.contact_table td.time{
+	border-bottom:#CCC 1px solid;
+	border-right:#CCC 1px solid;
+	padding:5px 10px;
+	}
+#contact_explain p{
+	margin:0;
+	text-indent:0;
+	width:100%;
+	}
+.contact_block {
+	display:block;
+	}
+.contact_block li {
+	list-style:inside disc;
+	margin:5px 0 5px 20px;
+	padding:0 0 5px 10px;
+	border-bottom:#666 1px dotted;
+	}
+.block_left {
+	width:320px;
+	float:left;
+	margin:20px 0 0 0;
+	}
+.block_right {
+	width:332px;
+	float:left;
+	margin:20px 0 0 0;
+	}
+
+.person_yamauchi {
+	position:relative;
+	left:-20px;
+	top:5px;
+	}
+
+/*-----------------------------------------------
+フォーム装飾
+-----------------------------------------------*/
+
+.form {
+	clear:both;
+	display:block;
+	width:630px;
+	margin:0 auto;
+	}
+.formdt {
+	background-color:#F0F0E1;
+	width:630px;
+	padding:10px;
+	
+	}
+.formdd {
+	background-color:#FAFAF3;
+	width:610px;
+	padding:10px 10px 10px 30px;
+	}
+
+.form input {
+	width:430px;
+	padding:2px;
+	}
+.form input.inputSmall {
+	width:60px;
+	}
+.form input.radio {
+	width:20px;
+	margin:0 5px 0 0;
+	}
+.form label {
+	margin:0 40px 0 0;
+	}
+.form textarea {
+	width:430px;
+	}
+.button {
+	width:200px;
+	margin:20px auto;
+	line-height:24px;
+	display:block;
+	}
+
+/*20130630松本　追記*/
+p.error{ 
+    color:#ff0000;
+    font-weight:bold;
+}
+

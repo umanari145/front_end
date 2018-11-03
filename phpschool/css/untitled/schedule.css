@@ -1,0 +1,180 @@
+/*-----------------------------------------------
+スケジュールページ専用
+-----------------------------------------------*/
+.scheduleBox {
+	width: 638px;
+	margin: 0;
+	margin: 20px 0 0 16px;
+	padding-bottom: 15px;
+}
+
+#lowerContentLeft .scheduleBox h3 {
+	background: url('../image/schedule/img_arrow.gif') left center no-repeat;
+	color: #FF8000;
+	height: auto;
+    padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	padding-left: 12px;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+/*safariとchrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#lowerContentLeft .scheduleBox h3 {
+		font-weight: bold;
+	}
+}
+
+#lowerContentLeft .scheduleBox p {
+	text-indent: 0;
+}
+
+#lowerContentLeft .scheduleBox .period {
+	width: 572px;
+	height: 36px;
+	margin-left: 15px;
+	padding-bottom: 15px;
+}
+
+#lowerContentLeft .scheduleBox .period p {
+	font-size: 20px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	padding: 8px 0 8px 0;
+	width: 260px;
+	text-align: center;
+	background: #f5bf5f;
+	font-weight: bold;
+}
+
+#lowerContentLeft .scheduleBox .period p.bg_orange {
+	width: 52px;
+	background: #ffffff;
+	color: #f5bf5f;
+}
+
+#lowerContentLeft .scheduleBox p.cb,
+#lowerContentLeft .scheduleBox p.accordion_head {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+/*アコーディオンの中身*/
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion {
+	width: 628px;
+	height: auto;
+	background: #F3F3F3;
+	margin-left: 7px;
+	padding: 11px 0 20px 0;
+}
+
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion table {
+	width: 610px;
+	margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+	margin-bottom: 20px;
+	background: #DFDFD0;
+}
+
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion table tr:nth-child(2n) {/*偶数にだけ別の背景色*/
+	background: #F3F3F3;
+}
+
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion table tr td {
+	font-size: 14px;
+}
+
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion table tr td.nam {
+	width: 94px;
+	height: 25px;
+}
+
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion table tr td.day {
+	border-right: 3px solid #ffffff;
+	width: 147px;/*170px*/
+	padding-left: 23px;
+}
+
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion table tr td.contents {
+	width: 330px;/*341px*/
+	padding-left: 11px;
+}
+
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion h3.h3_sub {
+	background: none;
+	font-size: 14px;
+	font-weight: bold;
+    height: auto;
+	color: #000000;
+	margin-bottom: 10px;
+	width: 618px;/*630px*/
+}
+
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion ul {
+	padding-left: 12px;
+}
+
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion ul li {
+	line-height: 1.5em;
+}
+
+/*-----------------------------------------------
+場所
+-----------------------------------------------*/
+.place {
+	width: 625px;
+	margin: 0 0 0 28px;
+}
+
+.place .address {
+	float: left;
+	width: 292px;
+}
+
+.place .map {
+	float: right;
+	width: 333px;
+}
+
+
+#lowerContentLeft .place .address h4 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#lowerContentLeft .place .address img {
+	margin: 0 0 12px 8px;
+}
+
+#lowerContentLeft .place .address p {
+	width: 292px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2em;
+	margin-bottom: 10px;
+	text-indent: 0;
+}
+
+/*文字を画像に*/
+#content_wrap #content #lowerContentLeft .scheduleBox .accordion table tr th p {
+	display: block;
+	text-indent: -9999em;
+	width: 94px;
+    height: 25px;
+	margin: 0;
+	padding: 0;
+
+	/*width: 94px;
+    height: 25px;
+	background: url('../image/schedule/days.jpg') left top no-repeat;
+	margin: 0;*/
+}
+/*文字を画像にend*/
+

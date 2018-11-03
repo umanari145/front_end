@@ -1,0 +1,185 @@
+.header_ber{
+	background:#1e7bdc;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+}
+
+#head_copy{
+	font-size: 1.3rem;
+}
+
+.header_upper{
+
+	display: flex;
+	justify-content: space-between;
+	@include mq-sp(){
+		display: block;
+	}
+	.logo{
+		white-space:nowrap;
+		.dt_logo{
+			max-width: 155px;
+		}
+		.phpschool_log{
+			max-width: 150px;
+		}
+	}
+	.sub_nav{
+			.header_link, .header_info{
+			display: flex;
+			justify-content: flex-end;
+			li{
+				margin-right: 10px;
+				&:before{
+					margin-right: 5px;
+					font-family: FontAwesome;
+				}
+			}
+		}
+		.header_link{
+			li{
+				&:before{
+					content: "\f0da";
+				}
+			}
+		}
+		.header_info{
+			margin-top: 5px;
+			li{
+				font-weight:bold;
+				font-size: 2.2rem;
+				line-height: 1.0;
+				padding-top: 5px;
+				&.tel_list{
+					&:before{
+						content: "\f095";
+					}
+				}
+				&.mail_list{
+					&:before{
+						content: "\f003";
+					}
+				}
+			}
+		}
+	}
+}
+
+.header_nav {
+	ul{
+		display: flex;
+		justify-content:space-between;
+		li{
+			//余った幅をとる
+			flex:1 1 auto;
+			align-items: center;
+			a{
+				display: block;
+				height: 90%;
+				padding: 40px 5px 3px;
+				text-align: center;
+				border-left: 1px solid #ddd;
+				font-size:12px;
+				//backgroundの共通設定
+				background-size: auto 25px;
+				background-position: center 7px;
+				background-repeat: no-repeat;
+			}
+			&.contact{
+				background-color: #ECECEC;
+				background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #F9F9F9), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #F9F9F9),color-stop(.75, #F9F9F9), color-stop(.75, transparent),to(transparent));
+				-webkit-background-size: 7px 7px;
+			}
+			&.home{
+				&:hover{
+					background: #888;
+					a{
+						background-image: url("#{$image_path}menu_home_w.png");
+					}
+				}
+				a{
+					background-image: url("#{$image_path}menu_home.png");
+				}
+			}
+			&.school{
+				&:hover{
+					background: #e56590;
+					a{
+						background-image: url("#{$image_path}menu_school_w.png");
+					}
+				}
+				a{
+					background-image: url("#{$image_path}menu_school.png");
+				}
+			}
+			&.schedule{
+				&:hover{
+					background: #f05757;
+					a{
+						background-image: url("#{$image_path}menu_schedule_w.png");
+					}
+				}
+				a{
+					background-image: url("#{$image_path}menu_schedule.png");
+				}
+			}
+			&.curriculum{
+				&:hover{
+					background: #f6ae3c;
+					a{
+						background-image: url("#{$image_path}menu_curriculum_w.png");
+					}
+				}
+				a{
+					background-image: url("#{$image_path}menu_curriculum.png");
+				}
+			}
+			&.interview{
+				&:hover{
+					background: #dad40d;
+					a{
+						background-image: url("#{$image_path}menu_interview_w.png");
+					}
+				}
+				a{
+					background-image: url("#{$image_path}menu_interview.png");
+				}
+			}
+			&.voice{
+				&:hover{
+					background: #9ad841;
+					a{
+						background-image: url("#{$image_path}menu_voice_w.png");
+					}
+				}
+				a{
+					background-image: url("#{$image_path}menu_voice.png");
+				}
+			}
+			&.faq{
+				&:hover{
+					background: #27ba62;
+					a{
+						background-image: url("#{$image_path}menu_faq_w.png");
+					}
+				}
+				a{
+					background-image: url("#{$image_path}menu_faq.png");
+				}
+			}
+			&.contact{
+				&:hover{
+					background: #48b8f0;
+					a{
+						background-image: url("#{$image_path}menu_contact_w.png");
+					}
+				}
+				a{
+					background-image: url("#{$image_path}menu_contact.png");
+				}
+			}
+		}
+	}
+}

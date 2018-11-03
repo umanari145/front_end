@@ -1,0 +1,57 @@
+/*-----------------------------------------------
+「会社概要」ページ専用
+-----------------------------------------------*/
+#lowerContentLeft table.company {
+	border-top:#CCC 1px solid;
+	border-left:#CCC 1px solid;
+	width:650px;
+	margin:0 auto 20px auto;
+	}
+
+#lowerContentLeft td.company_purport {
+	background-color:#F7F5F1;
+	border-bottom:#CCC 1px solid;
+	border-right:#CCC 1px solid;
+	padding:10px 20px;
+	width:20%;
+	font-weight:bold;
+	}
+#lowerContentLeft td.company_content {
+	border-bottom:#CCC 1px solid;
+	border-right:#CCC 1px solid;
+	padding:10px 20px;
+	width:60%;
+	}
+
+#lowerContentLeft td.company_content p {
+	width:430px;
+	margin:0;
+	text-indent:0;
+	}
+
+
+/*　会社概要　*/
+#company_history {
+	width:596px;
+	margin:0 auto;
+	border:#ccc 8px solid;
+	padding:12px;
+	line-height:24px;
+	}
+#company_history dt{
+	width:90px;
+	font-weight:bold;
+	float:left;
+	}
+#company_history dd{
+	width:510px;
+	margin:0 0 0 90px;
+
+	}
+
+
+/*-----------------------------------------------
+「会社概要」ページ専用
+=================================================
+文字
+-----------------------------------------------*/

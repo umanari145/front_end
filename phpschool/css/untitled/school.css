@@ -1,0 +1,153 @@
+/*-----------------------------------------------
+「非常識な」スクールページ専用
+-----------------------------------------------*/
+.school p {
+	font-size: 15px;
+}
+
+#lowerContentLeft .h3Number {
+	font-size:30px;
+	vertical-align:bottom;
+	margin:0 15px 0 0;
+	}
+#lowerContentLeft .h3Comment {
+	font-size:14px;
+	vertical-align:bottom;
+	font-weight:normal;
+}
+
+#lowerContentLeft h3.h3_sub {
+	background: none;
+	font-size: 15px;
+	font-weight: bold;
+    height: auto;
+}
+
+.commentBoxPiont {
+	border:1px #CECEBF solid;
+	background-color:#FFFFBF;
+	width:610px;
+	color:#EB4431;
+	font-size:21px;
+	font-weight:400;
+	margin:10px auto;
+	}
+
+.commentBoxPiont img{
+	float:left;
+	margin:10px 0 0 30px;
+	width: 42px;
+	}
+
+#lowerContentLeft .commentBoxPiont p{
+	float: right;
+	margin: 14px 0;
+	width: 538px;
+	font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2em;
+	text-indent: 0;
+}
+	
+.addtionalInfo {
+	border:1px solid #FF9999;
+	margin: 10px 10px 10px 30px;
+	background-color:#FFFFFF;
+	width: 596px;
+}
+	
+#lowerContentLeft .addtionalInfo p {
+	width: 562px;
+	margin: 0 auto;
+	padding:10px 20px;
+}
+
+/*　　理由7個目の特別装飾　　*/
+#seventhBox {
+	background:url("../image/school/h3Bar_02.jpg") no-repeat scroll left top transparent;
+	position:relative;
+	margin: 0 0 0 10px;
+	height:80px;
+	}
+.seventhH3Number {
+	position:relative;
+	top:30px;
+	font-weight:bold;
+	left:20px;
+	font-size:30px;
+	}
+
+#seventhBox h3 {
+	background:none;
+	position:relative;
+	bottom:24px;
+	left:24px;
+	}
+.seventhp {
+	background:none;
+	position:relative;
+	bottom:74px;
+	left:350px;
+	}
+.seventhSpecialP {
+	margin:0 0 300px 0;
+	}
+
+
+#lowerContentLeft h3.h3_2 {
+	vertical-align: bottom;
+	background: url('../image/school/h3Bar_02.jpg') left top no-repeat;
+	width: 630px;/*650*/
+	height: 56px;/*72px*/
+	padding: 16px 0 0 20px;
+	margin: 10px 0 10px 10px;
+}
+
+#lowerContentLeft h3.h3_2 span.h3Number7th {
+	font-size: 30px;
+	vertical-align:bottom;
+	float:left;
+	margin: 10px 14px 0 0;
+	font-weight:bold;
+}
+
+#lowerContentLeft h3.h3_2 p {
+	float: left;
+	font-size: 15px;
+	width: 332px;/*332px*/
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+}
+
+#lowerContentLeft h3.h3_2 p.fRight {
+	width: 233px;
+	float: right;
+	font-size: 14px;
+	line-height: 1.2em;
+	margin: 5px 20px 0 0;
+	font-weight: normal;/*20130318追記*/
+}
+	
+#lowerContentLeft h3.dotImportant {
+	width: 600px;
+	background: url('../image/school/dot.gif') left top no-repeat;
+	padding:0 0 0 25px;
+	height:15px;
+	margin:10px 0;
+	margin-left: 30px;
+	line-height:12px;
+	font-size: 15px;
+}
+
+.dotImportant img{
+	vertical-align:bottom;
+	}
+
+.afterDirectionUl {
+	margin:20px;
+	
+	}
+.afterDirectionUl li:before{
+	content: "●";	
+	}

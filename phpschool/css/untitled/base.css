@@ -1,0 +1,342 @@
+@charset "utf-8";
+/* ------------------------------------------- CSS Information 
+ File Name:      style.css 
+----------------------------------------------------------- */  
+  
+/* ----------------------- Browser Default Initialization */  
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,  
+pre, form, fieldset, input, textarea, p, blockquote, th, td {  
+    margin: 0;
+	padding: 0;  
+}  
+address, caption, cite, code, dfn, em, strong, th, var  {  
+    font-style: normal;  
+}
+table {  
+    border-collapse: collapse;  border-spacing: 0;  
+}  
+caption, th {  
+    text-align: left;  
+}  
+q:before ,q:after   {  
+    content: '';  
+}  
+object, embed   {  
+    vertical-align: top;  
+}  
+hr, legend  {  
+    display: none;  
+}  
+h1 {
+	font-size:12px;
+	}
+
+h2, h3, h5, h6  {  
+    font-size: 100%;  
+}  
+img, abbr, acronym, fieldset {  
+    border: 0;  
+}  
+li  {  
+    list-style-type: none;  
+}  
+  
+/* ----------------------- Basic Style */  
+/* ------------ Font Style */  
+body {  
+	font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    background: #FFF;  
+    color: #333;  
+    /*font-size: 100%;*/ 
+    /*font-size: 15px;*/ 
+    font-size: 14px; 
+    line-height: 150%;   
+}  
+* + html body {
+    font-family: "メイリオ","Meiryo";
+}  
+  
+/* ------------ A Style */  
+a:link  {  
+    text-decoration: none;  
+    color: #00F;  
+}  
+  
+a:visited   {  
+    text-decoration: none;  
+    color: #00F;  
+}  
+  
+a:hover {  
+    text-decoration: underline;  
+    color: #00F;  
+} 
+
+a:active    {  
+    text-decoration: none;  
+    color: #00F;  
+}  
+/*　トップページ　*/
+	/*　上部　*/
+
+header {
+	background-image:url(../image/general/head_bar.gif);
+	background-repeat:repeat-x;
+	width:100%;
+	}
+#head_top {
+	width:960px;
+	margin:0 auto;
+    position:relative;	
+}
+h1{
+	/*padding:5px 0 0 0;*/
+	padding:5px 0 0 27px;
+	float:left;
+	}
+
+div#head_top p.top_navi{
+    font-family:'メイリオ';
+    position:absolute;
+    top:7px;
+}
+
+div#head_top p#to_student{
+    left:658px;
+}
+
+div#head_top p#company_sum{
+    left:754px;
+}
+
+div#head_top p#itwords{
+    left:850px;
+}
+
+div#head_top p.top_navi a{
+    display:block;
+    width:82px;
+    height:23px;
+    text-align:center;
+    line-height:1.8em;
+    color:#000;
+    background:url(../image/general/topnavi_back_off.gif) no-repeat;
+}
+
+div#head_top p.top_navi a:hover{
+    text-decoration:none;
+    background:url(../image/general/topnavi_back_on.gif) no-repeat;
+}
+img.company , img.words{
+	/*padding:7px 0 0 230px;*/
+	float: right;
+    padding: 7px 15px 0 0;
+}
+
+#head_bottom {
+	width:960px;
+	margin:0 auto;
+	}
+#head_bottom img{
+	float:left;
+	margin:10px 0 0 24px;
+	}
+
+#top_feelfreetocontact {
+	background-image:url(../image/general/top_feelfreetocontact.gif);
+	height:77px;
+	width:370px;
+	margin:8px 0 6px 90px;
+	float:left;
+	background-repeat:no-repeat;
+	position:relative;
+	}
+
+#top_feelfreetocontact ul{
+	font-size:20px;
+	font-weight: normal;
+	margin:30px 0 0 0;
+	}
+
+#top_feelfreetocontact li{
+	margin:2px 0;
+	font-weight: normal;
+	font-family:"メイリオ","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	}
+#top_feelfreetocontact a{
+	color:#333;
+	}
+#top_feelfreetocontact a:hover{
+	color:#333;
+	text-decoration:underline;
+	}
+
+
+#top_feelfreetocontact .balloon {
+	position:absolute;
+	top:22px;
+	left:193px;
+	}
+
+	/*　グローバルメニュー　*/
+#global_menu {
+	background-image:url(../image/general/nav00.jpg);
+	background-repeat:repeat-x;
+	height:72px;
+	clear:both;
+	}
+#global_menu ul {
+	width:950px;
+	margin:0 auto;
+	clear:both;
+	}
+#global_menu li {
+	float:left;
+	height:72px;
+	}
+
+
+
+/*　フッタ部分　*/
+footer {
+	background-image:url(../image/top/footer_bar.jpg);
+	height:342px;
+	background-repeat:repeat-x;
+	clear:both;
+	}
+#footer {
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 9px;
+	color: #FFF;
+	font-size:12px;
+}
+	/*　フッタロゴ　*/
+#footerLogo {
+	width:227px;
+	height:342px;
+	background-color:#FFF;
+	float:left;
+	}
+#footerLogo img {
+	padding:20px 10px;
+	}
+
+	/*　フッタメニュー・住所等　*/
+#footerInfo {
+	width:400px;
+	margin:30px 0 0px 10px;
+	float:left;
+	}
+
+#footerInfo_address {
+	width:170px;
+	float:left;
+	margin:60px 0 0 0;
+	}
+#footerInfo_nearSta {
+	width:220px;
+	float:left;
+	margin:60px 0 0 0;
+	}
+
+#footerInfo dl {
+	}
+#footerInfo dt {
+	}
+
+#footerInfo_address dd{
+	width:115px;
+	}
+
+
+#footerInfo_nearSta dd{
+	float:left;
+	width:100%;
+	}
+
+#footerInfo a{
+	color:#FFF;
+	}
+#footerInfo a:hover{
+	color:#CCC;
+	}
+address {
+	margin:230px 0 0 0;
+	clear:both;
+	}
+
+	/*　フェイスブック　*/
+
+#faceBookPI {
+	width:304px;
+	float:left;
+	background-color:#FFF;
+	margin:30px 0 0 0;
+	}
+
+/*　下位ページ　*/
+
+/*　汎用的クラス　*/
+.notes {
+	text-align:center;
+	}
+.cb {
+	clear:both;
+	}
+.textImportant {
+	font-weight:bold;
+	color:#F00;
+	}
+
+.moreInfo {
+	margin:10px 50px 10px 0;
+	text-align:right;
+	display:block;
+	}/*　もっと詳しくボタン　*/
+
+.contactButton {
+	display:block;
+	margin:20px auto;
+	width:813px;
+	height:180px;
+	}
+.pagetop {
+	margin:10px 50px 0 0;
+	padding:0 0 10px 0;
+	text-align:right;
+	display:block;
+	clear:both;
+	}
+
+/*20130312追記　西村*/	
+img.top_img {
+	padding-left: 9px;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+h2.main_title{
+    background:url(../image/general/headersample.jpg) no-repeat;
+    width:660px;
+    height:70px;
+    padding-left:120px;
+    line-height:2.8em;
+    font-size:20pt;
+    overflow:hidden;
+}
+
+
+.pb10 {
+	padding-bottom: 10px;
+}
+
+.pb20 {
+	padding-bottom: 20px;
+}
+
+#lowerContentLeft .box_b20 {
+	margin-bottom: 20px;
+}

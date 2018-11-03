@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 var gulp_sass = require('gulp-sass')
+var ejs = require("gulp-ejs");
+var rename = require("gulp-rename");
 
 gulp.task('server', function() {
   browserSync.init({
@@ -28,6 +30,23 @@ gulp.task('watch', function() {
     browserReload()
   })
 });
+
+
+/**
+ * responsive用
+ */
+gulp.task('responsive', function(){
+
+  gulp.src('responsive/src/sass/style.scss')
+  .pipe(gulp_sass({outputStyle:'expanded'}))
+  .pipe(gulp.dest('responsive'))
+
+  gulp.src('responsive/src/ejs/layout.ejs')
+    .pipe(ejs()) // 拡張子の指定
+	.pipe(rename({extname:'.html',basename:"index"}))
+  .pipe(gulp.dest('responsive/'));
+});
+
 
 
 gulp.task('default', function() {

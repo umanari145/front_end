@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
     <meta charset="UTF-8">
-    <title>flex</title>
+    <title>flex ショートハンドプロパティ</title>
     <link rel="stylesheet" href="style2.css">
     <body>
+
+    <p>参考リンク</p>
+    <a href="https://parashuto.com/rriver/development/how-flex-item-width-is-calculated" target="_blank">
+      https://parashuto.com/rriver/development/how-flex-item-width-is-calculated
+    </a>
+
 		<p>親400px</p>
 <pre>
 .child1{
 	flex: 1 1 250px;
+  /**
+   * flex-grow:1
+   * flex-shrink:1
+   * flex-basis: 250px;
+   */
 }
 
 .child2{

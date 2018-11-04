@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body{
+	padding: 100px 0;
+}
+
+.block{
+	height: 100px;
+	background: #000;
+}
+
+.delay5_duration1{
+  animation: sizeChange 1s linear 0.5s infinite;
+  /*
+  対象のCSS
+  animation-name: sizeChange;
+  持続時間
+  animation-duration: 1s;
+  動きの種類llinear,easeなど
+  animation-timing-function: linear;
+  開始時間
+  animation-delay: .5s;
+  繰り返し回数 infine, 数値指定
+  animation-iteration-count: infinite;
+*/
+}
+
+.delay1_duration5{
+  animation: sizeChange .5s linear 1s infinite;
+}
+
+@keyframes  sizeChange{
+	0% {
+		width: 10px;
+	}
+	100% {
+		width: 100px;
+	}
+}
+
+#animating{
+	width: 10px;
+}
+
+.hovering{
+	width: 30px;
+	margin-left: 40px;
+  transition: all .1s ease 1s;
+  /*
+  対象となるプロパティ(全てはall)
+  transition-property:all;
+  持続時間
+  transition-duration:.1s;
+  動きの種類llinear,easeなど
+  transition-timing-function:ease;
+  開始時間
+  transition-delay:1s;
+  */
+  &:hover{
+    width: 100px;
+    margin-left: 0;
+  }
+}
+
+.hovering2{
+	width: 30px;
+	margin-left: 40px;
+  transition: all 1s ease .1s;
+  &:hover{
+    width: 100px;
+    margin-left: 0;
+  }
+}
+
+.rotation_block{
+  padding: 0;
+}
+
+.rotation{
+  list-style-type: none;
+  position: relative;
+  &::before{
+    background: absolute;
+    content: '';
+    top:50%;
+    right:5px;
+    margin-top: -7px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-left: 1px solid #000;
+    border-top: 1px solid  #000;
+    transition: all 1s ease;
+  }
+  &:hover{
+    &::before{
+      transform: rotate(225deg);
+    }
+  }
+}
+
+
+
+.toggle_wrapper{
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.toggle_menu{
+  width: 30px;
+  height: 30px;
+  background: #ea6094;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  border-radius: 90px;
+  padding: 14px 12px;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 20px;
+  span{
+    display: block;
+    height: 3px;
+    width: 24px;
+    margin: 0 0 4px 0;
+    background: #fff;
+    transition: all .6s;
+    left:3px;
+    position: absolute;
+  }
+}
+
+
+.first,.second{
+  transform: rotate(0deg);
+}
+
+.active .second{
+  transform: rotate(450deg);
+}
+
+
+.detect_scroll_wrapper{
+  margin-top: 300px;
+	width: 200px;
+	height: 100px;
+	background: #fff;
+}
+
+.detect_scroll_button{
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+	background: #eee;
+}
+
+.detect_scroll_button_inner{
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+	background: #eee;
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+.block_button{
+	position: relative;
+	width:200px;
+	display: inline-block;
+	text-align: center;
+}
+.inner_str{
+	padding: 15px 0;
+	text-align:center;
+	display: block;
+	border: 1px solid #eee;
+}
+
+/**全要素共通**/
+.block_button, .inner_str{
+  &::before, &::after{
+    display: block;
+    position: absolute;
+    content:'';
+    transition: all 1s ease;
+    background-color: #3498db;
+  }
+}
+
+/*→方向*/
+.block_button{
+  &::before{
+	  height: 1px;
+	  width: 0px;
+	  top:0;
+	  left:0;
+  }
+}
+/*←方向*/
+.block_button{
+  &::after{
+  	height: 1px;
+  	width: 0px;
+  	right: 0;
+  	bottom: 0;
+  }
+}
+
+/*↓方向*/
+.inner_str{
+  &::before{
+	  height: 0px;
+	  width: 1px;
+	  right:0;
+	  top:0;
+ }
+}
+/*↑方向*/
+.inner_str{
+  &::after{
+	  height: 0px;
+	  width: 1px;
+	  bottom:0;
+	  left:0;
+  }
+}
+
+.block_button{
+  &:hover{
+    height: 100%;
+    .inner_str{
+      &::before,&::after{
+        height: 100%
+      }
+    }
+    &::before,&::after{
+      width: 100%;
+    }
+  }
+}

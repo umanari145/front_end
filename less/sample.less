@@ -1,21 +1,15 @@
-/** sample.css **/
 @charset 'UTF-8';
 @import "variables";
-@import "mixins";
+@import "libs";
 
 /** ネストしたクラスを書くことができる **/
 div.samp1{
   margin: 10px;
   .nest1, .nest2{
     padding:5px;
+    font-size: @basic_font_size;
   }
 }
-
-/** for文 **/
-@for $i from 10 through 15 {
-  .fs_#{$i} {font-size: $basic_font_size * $i/10;}
-}
-
 
 /** &の使い方について、擬似要素の使用 **/
 ul{
@@ -56,11 +50,11 @@ ul{
 }
 
 .btn-basic{
-  @include round-btn("#2D80C4");  
+  .round-btn("#2D80C4");
 }
 
 /** 継承 **/
 .btn-child{
-  @extend .btn-basic;
+  .btn-basic;
   background-color:#61DC60;
 }

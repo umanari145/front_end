@@ -5,10 +5,10 @@
 CSSで気をつけるべきポイント
 - basic/css_tips.md に記載
 
-## sass
+## less/sass
 CSSプリプロセッサ
 
-### 特徴、使用時のメリット
+### 特徴、使用時のメリット(一部sassのみのものあり)
 - 変数、配列の使用、他ファイルの読み込み
 - 条件分岐、ループ
 - 関数化、モジュール化
@@ -16,18 +16,16 @@ CSSプリプロセッサ
 - クラスの継承
 
 
-
 ### インストール
-node.js
 
-Windows
+Windows,Mac,Linux共通
 
+1 https://nodejs.org/ja/download/ よりnode.js,npmのインストール
+参考リンク https://ics.media/entry/3290
 
-Mac,Linux
-
+2 下記コマンドでsassのインストール
 ```
 npm install -g node-sass
-
 ```
 
 ### コンパイル方法
@@ -36,6 +34,7 @@ npm install -g node-sass
 ```
 #一番シンプルなコマンド
 sass sample.sass sample.css
+lessc sample.sass sample.css
 #監視(自動で更新される)
 sass --watch *.scss
 ```
@@ -54,12 +53,19 @@ ex. atomのsass-autocompile
 - _mixins.scss mixisについて
 - _variables.scss 変数、配列などについて
 
+- less以下
+- index.html HTML
+- sample.less 元となるscssファイル
+- sample.css 生成されたcss
+- libs.less mixisについて
+- variables.scss 変数について
+
 
 ## flexbox
-複雑なを平易にできる
+複雑なレイアウトを平易に表現できる
 
 ### 特徴、使用時のメリット
-- 既存のfloat(overflow:hiddenやclear:fix)などのレイアウトのデメリットを解消
+- 既存のfloat(overflow:hiddenやclear:fixの組み合わせ)などのレイアウトのデメリットを解消
 - 均等配置など従来のCSSでは難しかった配置が簡単にできる
 - 縦中央ぞろえなどもプロパティ1つでできる
 
@@ -142,7 +148,7 @@ Mac,Win共通
       - layout.ejs レイアウトファイル
       - parts.ejs 他パーツ
 - css
-  - style.css 実際に読み込まれるCSS 
+  - style.css 実際に読み込まれるCSS
 - images 画像
 
 ### 実行

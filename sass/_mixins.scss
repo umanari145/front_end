@@ -1,6 +1,6 @@
 
 /** mixin テンプレート的な機能 **/
-@mixin round-btn($color:#c9c9c9x, $radius:4px) {
+@mixin round-btn($color:#c9c9c9, $radius:4px) {
   display: inline-block;
   width: 200px;
   padding: 20px 10px;
@@ -11,5 +11,5 @@
     #{$prefix}border-radius:$radius;
   }
   border-radius: $radius;
-  background-color:$color: ;
+  background-color:$color;
 }

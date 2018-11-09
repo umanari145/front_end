@@ -191,11 +191,9 @@ body {
   bottom: 0;
   left: 0; }
 
-.block_button:hover {
+.block_button:hover .inner_str::before, .block_button:hover .inner_str::after {
   height: 100%; }
-  .block_button:hover .inner_str::before, .block_button:hover .inner_str::after {
-    height: 100%; }
-  .block_button:hover::before, .block_button:hover::after {
-    width: 100%; }
+.block_button:hover::before, .block_button:hover::after {
+  width: 100%; }
 
 /*# sourceMappingURL=animation.css.map */

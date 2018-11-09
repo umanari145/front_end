@@ -1,77 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <meta charset="UTF-8">
-    <title>中央揃えの技法に関して</title>
+<meta charset="UTF-8">
+<title>中央揃えの技法に関して</title>
 <style>
+  .strong_p {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 
-.strong_p{
-  font-weight: bold;
-  font-size: 1.5rem;
-}
+  .basic {
+    width: 100%;
+    background-color: #DDEEFF;
+  }
 
-.basic{
-  width: 100%;
-  background-color: #DDEEFF;
-}
+  .basic_block_element {
+    background-color: #ff0000;
+  }
 
-.basic_block_element{
-  background-color:#ff0000;
-}
+  .basic_block {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+  }
 
-.basic_block{
-  width: 300px;
-  height: 50px;
-  margin: 0 auto;
-}
+  .inc_inline {
+    text-align: center;
+  }
 
-.inc_inline{
-  text-align: center;
-}
+  .basic_color {
+    background-color: #ff0000;
+  }
 
-.basic_color{
-  background-color: #ff0000;
-}
+  .inc_padding {
+    padding: 20px 0;
+  }
 
-.inc_padding{
-  padding: 20px 0;
-}
+  .line_height {
+    line-height: 40px;
+  }
 
-.line_height{
-  line-height:40px;
-}
-
-.img_center{
-  position: absolute;
-  top:50%;
-  margin-top: -103px;
-}
+  .img_center {
+    position: absolute;
+    top: 50%;
+    margin-top: -103px;
+  }
 </style>
-    <body>
-    <p class="strong_p">横揃えのセンタリングに関して</p>
-		<p>ブロックmargin:o auto</p>
-		<div class="basic">
-      <div class="basic_block basic_block_element">幅を決める必要あり</div>
-    </div>
 
-		<p>インライン text-align:center</p>
-		<div class="basic inc_inline">
-			<span class="basic_color">list1(内包要素に依存する)</span>
-		</div>
+<body>
+  <p class="strong_p">横揃えのセンタリングに関して</p>
+  <p>ブロックmargin:o auto</p>
+  <div class="basic">
+    <div class="basic_block basic_block_element">幅を決める必要あり</div>
+  </div>
 
-    <p class="strong_p">縦揃えのセンタリングに関して</p>
-    <p>ブロック　親が高さを指定しなくていい場合padding</p>
-		<div class="basic inc_padding">
-			<div class="basic_color">高さを一切指定しない</div>
-		</div>
+  <p>インライン text-align:center</p>
+  <div class="basic inc_inline">
+    <span class="basic_color">list1(内包要素に依存する)</span>
+  </div>
 
-    <p>インライン line-height</p>
-		<div class="basic" style="height:40px;">
-			<span class="line_height">line-height</span>
-		</div>
+  <p class="strong_p">縦揃えのセンタリングに関して</p>
+  <p>ブロック　親が高さを指定しなくていい場合padding</p>
+  <div class="basic inc_padding">
+    <div class="basic_color">高さを一切指定しない</div>
+  </div>
 
-    <p>画像の縦中央揃え</p>
-		<div class="basic" style="height:500px;position:relative;">
-			<img src="sample_pug.jpeg" class="img_center">
-		</div>
-    </body>
+  <p>インライン line-height</p>
+  <div class="basic" style="height:40px;">
+    <span class="line_height">line-height</span>
+  </div>
+
+  <p>画像の縦中央揃え</p>
+  <div class="basic" style="height:500px;position:relative;">
+    <img src="sample_pug.jpeg" class="img_center">
+  </div>
+</body>
+
 </html>

@@ -19,8 +19,10 @@ $(function(){
 	$(window).scroll(function(){
 		//画像の絶対的な位置
 		var imgPos = $('.detect_button').offset().top;
+    console.log('imgPos' + imgPos)
 		//スクロール量
 		var scrollRyou = $(window).scrollTop();
+    console.log('scrollRyou' + scrollRyou)
 		if (scrollRyou > imgPos -500) {
 			$('.detect_scroll_button_inner').css({
 				'width':'100px'

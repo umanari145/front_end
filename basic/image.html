@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <meta charset="UTF-8">
-    <title>image font</title>
+<meta charset="UTF-8">
+<title>image font</title>
 <style>
-
-* {
+  * {
     box-sizing: border-box;
-}
+  }
 
-*:before,
-*:after {
-	box-sizing: border-box;
-}
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
 
-div#image02, div#image03, div#image04{
-	width: 500px;
-}
+  div#image02,
+  div#image03,
+  div#image04 {
+    width: 500px;
+  }
 
-div#image04{
-	height:200px;
-}
+  div#image04 {
+    height: 200px;
+  }
 
-.apple03{
-	width:100%;
-}
+  .apple03 {
+    width: 100%;
+  }
 
-.apple04{
-	width:100%;
-	height:100%;
-}
-
+  .apple04 {
+    width: 100%;
+    height: 100%;
+  }
 </style>
-    <body>
-		<header>
-		</header>
-		<div id="wrapper">
 
-			<p>幅設定なし</p>
-			<div id="image01">
-				<img src="apple01.jpg" />
-			</div>
+<body>
+  <header>
+  </header>
+  <div id="wrapper">
 
-			<p>幅設定あり　ただし画像より小さく制限なし</p>
-			<div id="image02">
-				<img src="apple01.jpg" />
-			</div>
+    <p>幅設定なし</p>
+    <div id="image01">
+      <img src="apple01.jpg" />
+    </div>
 
-			<p>幅設定あり　ただし画像より小さく制限あり　制御され比率は固定</p>
-			<div id="image03">
-				<img src="apple01.jpg" class="apple03" />
-			</div>
+    <p>幅設定あり　ただし画像より小さく制限なし</p>
+    <div id="image02">
+      <img src="apple01.jpg" />
+    </div>
 
-			<p>幅設定あり　縦も横も制御</p>
-			<div id="image04">
-				<img src="apple01.jpg" class="apple04" />
-			</div>
+    <p>幅設定あり　ただし画像より小さく制限あり　制御され比率は固定</p>
+    <div id="image03">
+      <img src="apple01.jpg" class="apple03" />
+    </div>
 
-    </body>
+    <p>幅設定あり　縦も横も制御</p>
+    <div id="image04">
+      <img src="apple01.jpg" class="apple04" />
+    </div>
+
+</body>
+
 </html>

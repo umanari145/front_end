@@ -238,7 +238,6 @@ body{
 
 .block_button{
   &:hover{
-    height: 100%;
     .inner_str{
       &::before,&::after{
         height: 100%

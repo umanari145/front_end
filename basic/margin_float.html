@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<title>margin</title>
+<style>
+  html {
+    font-size: 62.5%;
+  }
+
+  header {
+    background: #ff0000;
+  }
+
+  #logo {
+    margin-top: 30px;
+    font-size: 1.6rem;
+  }
+
+   p{
+     margin: 15px 0 0 0;
+   }
+  #wrapper {
+    background: #f0f8ff;
+  }
+
+  .blockA {
+    background: #008b8b;
+    width: 300px;
+    height: 100px;
+    float: left;
+  }
+
+  .blockB {
+    background: #deb887;
+    width: 200px;
+    height: 100px;
+    float: left;
+  }
+
+   .clearfix::after{
+     content: "";
+     display: block;
+     clear: both;
+   }
+
+</style>
+
+<body>
+  <header>
+    <h1 id="logo">sample site</h1>
+  </header>
+
+  <p>overflow:hiddenで解除</p>
+  <div class="wrapper" style="overflow:hidden;">
+    <div class="blockA">blockA</div>
+    <div class="blockB">blockB</div>
+  </div>
+  <div class="blockC">blockC</div>
+
+  <p>clear:bothで解除</p>
+  <div class="wrapper">
+    <div class="blockA">blockA</div>
+    <div class="blockB">blockB</div>
+  </div>
+  <div class="blockC" style="clear:both;">blockC</div>
+
+  <p>clearfixで解除</p>
+  <div class="wrapper clearfix">
+    <div class="blockA">blockA</div>
+    <div class="blockB">blockB</div>
+  </div>
+  <div class="blockC">blockC</div>
+
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>

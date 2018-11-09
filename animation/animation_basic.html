@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <meta charset="UTF-8">
-    <title>animation</title>
-	<link rel="stylesheet" type="text/css" href="animation.css">
-	<script
-	  src="https://code.jquery.com/jquery-1.12.4.js"
-	  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-	  crossorigin="anonymous"></script>
-	<script type="text/javascript" src="animation.js"></script>
-    <body>
+<meta charset="UTF-8">
+<title>animation</title>
+<link rel="stylesheet" type="text/css" href="animation.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="animation.js"></script>
 
-      <p>keyframesプロパティ</p>
-  		<p>@keyframes使用</p>
-  		<p>
-  		始まるまですぐ(0.5s)
-  		動作自体はゆっくり(1sで)終わる
-  		</p>
-  		<div class="block delay5_duration1">
-  		</div>
+<body>
 
-  		<p>
-  		始まるまではゆっくり(1s)
-  		動作自体はすぐ(0.5s)終わる</p>
-  		<div class="block delay1_duration5">
-  		</div>
+  <p>keyframesプロパティ</p>
+  <p>@keyframes使用</p>
+  <p>
+    始まるまですぐ(0.5s) 動作自体はゆっくり(1sで)終わる
+  </p>
+  <div class="block delay5_duration1">
+  </div>
 
-  		<p>animate(JavaScript)使用</p>
-  		<p>delay1s 動作自体は5s
-  		</p>
-  		<div class="block" id="animating">
-  		</div>
+  <p>
+    始まるまではゆっくり(1s) 動作自体はすぐ(0.5s)終わる
+  </p>
+  <div class="block delay1_duration5">
+  </div>
 
-  		<p>transitionでhover時の動きを使用</p>
-  		<p>delay1s 動作自体は0.1s
-  		</p>
-  		<div class="block hovering">
-  		</div>
+  <p>animate(JavaScript)使用</p>
+  <p>delay1s 動作自体は5s
+  </p>
+  <div class="block" id="animating">
+  </div>
 
-  		<p>delay0.1s 動作自体は1s
-  		</p>
-  		<div class="block hovering2">
-  		</div>
+  <p>transitionでhover時の動きを使用</p>
+  <p>delay1s 動作自体は0.1s
+  </p>
+  <div class="block hovering">
+  </div>
 
-    </body>
+  <p>delay0.1s 動作自体は1s
+  </p>
+  <div class="block hovering2">
+  </div>
+
+</body>
+
 </html>

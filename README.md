@@ -109,9 +109,8 @@ Mac,Win共通
 1. https://nodejs.org/ja/download/ よりソースをダウンロード
 2. npm -vでバージョンが表示されればOK
 3. ```npm install``` package.jsonより関連ライブラリがインストールされる
-4. ```mv gulpfile1.js gulpfile.js```
-5. ```npx gulp sample_task```
-6. ```npx gulp```
+4. ```npx gulp sample_task --gulpfile gulpfile1.js```
+
 
 ### ファイル構成
 - responsive以下
@@ -152,5 +151,4 @@ Mac,Win共通
 - images 画像
 
 ### 実行
-1. ```mv gulpfile2.js gulpfile.js```
-3. ```npx gulp```
+1. ```npx gulp  --gulpfile gulpfile2.js```
